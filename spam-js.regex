@@ -1,0 +1,2644 @@
+
+#negative weight for McXxxxx names, local phone numbers
+
+/Mc[A-Z]|Mac[A-Z]/ #-2
+/\b\(?502\)? ?-?[0-9]{3}-?[0-9]{4}\b/i #-3
+/\b\(?812\)? ?-?[0-9]{3}-?[0-9]{4}\b/i #-2
+/\b\(?859\)? ?-?[0-9]{3}-?[0-9]{4}\b/i #-3
+
+
+
+#Upper and Lowercase back and forth junk, strings of garbage without vowels
+
+/[a-z][a-z][A-Z][A-Z][a-z]/ #2
+/[A-Z][A-Z][a-z][a-z][A-Z]/ #2
+/[A-Z][A-Z][a-z][a-z][A-Z][A-Z][a-z]/ #4
+/[a-z][a-z][A-Z][A-Z][a-z][a-z][A-Z]/ #4
+/[A-Z][A-Z][a-z][a-z][A-Z][A-Z][a-z][A-Z]/ #5
+/[a-z][a-z][A-Z][A-Z][a-z][a-z][A-Z][a-z]/ #5
+/[bcdfghjklmnpqrstvwxyz]{10,}/ #5
+
+
+#non-english alphabets
+
+/ท/i #20
+/Ф/i #10
+/и/i #10
+/л/i #10
+/н/i #10
+/г/i #10
+/п/i #10
+/и/i #10
+/я/i #10
+/ё/i #10
+/б/i #10
+/й/i #10
+/з/i #10
+/д/i #10
+/ж/i #10
+/к/i #10
+/Б/i #10
+/Щ|Ю|Ш|е|м|Р|В|А|о|і/i #10
+/เ|ปิ|ด|ยู|ส|เ|ซ|อ|ร์/i #20
+/蝦|皮|商|城|遊|戲|情|報/i #10
+/[ïîãîäàíîâîñòïîãîäàè]{3,}/i #100
+/ß/i
+/Â³Ã/i
+/Âœ/i
+/ÂºÃ/i
+/ÑÑ/i
+/cocaine/i
+/±/i
+/µ/i
+/Ð/i
+/legalrc/i
+/¶/i
+/dextro/i
+/methorphan/i
+/¾/i
+
+/Áîøêè/i
+/Ìîñ/i
+/êâà/i
+/àéîí/i
+/Òðî/i
+/ïàð/i
+/âî/i
+/Íèêó/i
+/ëèíî/i
+/Êóïèò/i
+/Êîêñ/i
+/Àìôå/i
+/òàìèí/i
+/Ãàøèø/i
+/Ýêñ/i
+/òàçè/i
+/âàæíî/i
+/レ|プ|リ|カ|コ|ス|モ|グ|ラ|フ|デ|イ|ト|ナ|コ|ピ/i #20
+/ム|ブ|メ|ン|ト|コ|ピ|デ|イ|ト|ナ|ス|パ|ノ|グ|ラ|フ/i #20
+
+
+
+
+
+
+/erotic/i #3
+/naked/i #3
+
+/it currently has very few customer reviews/i #1
+/consumers use online reviews as part/i #2
+/we can increase rankings/i #30
+/recently ran a search on your/i
+/was doing some research on your/i
+/You know how important it is to be visible/i
+/might like to know some of the reasons why/i
+/Unlike other SEO companies/i
+/I came across your company while researching/i
+/I can really help you generate more business through your website/i
+/ranked No. 1 on Google/i
+/I took a little look at your website and I have some feedback/i
+/I see you've invested a lot of time and effort into your website/i
+/increase rankings of your website in search engines/i
+/Please reply back for more details/i
+/recently ran a search on your business/i
+/few customer reviews on sites/i
+/consumers use online reviews as part of their buying process/i
+/Online Marketing Consultant/i
+/ cialis/i #5
+/cialis /i #5
+/viagra/i #5
+/Buy Viagra Online/i #20
+/without prescription/i
+/best loans/i
+/Reputation Thrusters/i
+/Justin Bieber/i
+/Twitter Followers/i
+/unsubscribe/i #3
+/\[link=/i #100
+/[a-z][A-Z][a-z][A-Z]/
+/buy [a-z]+ online/i
+/business will be ranked/i
+/promote your business/i
+/likes, followers, and views/i
+/facebook fanpage/i
+/don't miss out/i
+/https?:\/\//i
+/marketing consultant/i  #5
+
+/organic search/i
+/1st page of Google/i
+/Want more clients/i
+/briefly introduce/i
+/reviewing your website/i 
+
+/absolutely free/i
+
+/marketing decisions/i #2
+/marketing efforts/i  #2
+/zero obligation/i #5 
+/grow your business/i #7
+
+/Justin Bieber/i
+/skin rash/i
+
+/phenergan/i
+/10 mg/i
+/atarax/i
+/drug class/i
+/therapeutic/i
+/amoxicillin/i
+/drug use/i
+/buy canada/i
+/[0-9]+ mg/i
+/prescription/i
+
+/SEO /i
+/ SEO/i
+/Lead generation/i
+/qualified leads/i
+/results guaranteed/i
+
+/OUR ANALYSIS IS AS FOLLOW/i
+/People who are searching for your type of Business/i
+/one of your competitors/i
+
+/cash advance online/i
+/SEO Specialists/i
+/Data Entry Operators/i
+
+/Web Design and Search Engine Optimization/i
+
+/Web Development/i
+
+/I'm a website designer/i
+/updating your site/i
+/automate some of your business processes/i
+/big impact on my clients sales/i
+
+/NO PERSONAL GUARANTEE/i
+/SIMPLE 1 PAGE APPLICATION/i
+/Business loan/i
+/monthly revenue of your business/i
+/hiring more employees/i
+/Poor credit/i
+
+/Hi, this is Joel from Web/i
+/All Inclusive Web Design/i
+/Web Marketing company/i
+/web development firms/i
+/great looking sites/i
+/Search Engine Optimization/i
+/Content Writing/i
+/Pay-Per-Click/i
+/Banner Advertising/i
+
+/writing management marketplace/i
+/I imagine you might need/i
+/Content Runner/i
+
+/Create Or Re-design Your Business Website/i
+/web solutions company/i
+/stunning websites/i
+
+/creating a mobile application/i
+/apps for smartphone/i
+
+/regarding your website/i
+/mobile friendly/i
+/website re-design/i
+
+/first page of Google/i
+/increase the number of leads and sales/i
+/improve my client.?s website standings/i
+/increase the traffic to your site/i
+/completely free and there is no obligation/i
+/remove in the subject/i
+/take you off our list/i
+
+/My name is Garett/i
+/web design firm/i
+/My name is Ed/i
+/expertdesign78@gmail.com/i
+/Square2designz@gmail.com/i
+/web design expert/i
+/go4designsite@gmail.com/i
+/If you are not interested/i
+/established web design agency/i
+
+/mobilevideomasters/i
+/Rich Williams/i
+
+/Google Adwords/i
+/flood your website/i
+/certified Google/i
+/BusinessPromoted.com/i
+
+/drive much more traffic/i
+/traffic to your site/i
+/site traffic/i
+/Internet Marketing Expert/i
+
+/business generation specialist/i
+/web marketing methods/i
+/traffic and sales/i
+/in the subject line/i
+/If you're not interested/i
+/I won't reach out to you again/i
+
+/digital marketing agency/i
+/replying with the word remove/i
+/take you off my list/i
+/look at your competitors/i
+/increase the traffic/i
+
+/show you on your website/i
+/business from the web/i
+/found with your site/i
+/Just reply with the word/i
+/don't want to be bothered by emails like this/i
+/rank2lead/i
+
+/Web Solutions/i
+/making your website/i
+/Search Engine Optimization/i
+/Our typical site starts/i
+/removed from any future messages/i
+/webdesign4marketing/i
+
+/internet marketing agency/i
+/sitetrafficmaster/i
+/my name is Kris/i
+/digital marketing programs/i
+/increase the traffic/i
+/not interested in hearing from me/i
+
+/purple99.net/i
+/Web Design/i
+/high quality websites/i
+/Mobile responsive/i
+/website looks outdated/i
+
+/quite impressed with your work/i
+/B2B online marketing platform/i
+/person in charge of your marketing/i
+/contactuschannel.com/i
+
+/assist our clients in getting more customers/i
+/Our services are not a fit for everyone/i
+/achieve success for your campaign/i
+
+/designmages@gmail.com/i
+/staticwebsolutions@gmail.com/i
+/designsbypros@gmail.com/i
+/302-316-3863/i
+/201..815-4337/i
+/real4youmarketing@gmail.com/i
+/802..242.0544/i
+/612..405.4211/i
+/201. 815-4337/i
+
+/I assist our clients in getting more customers/i
+/achieve success for your campaign/i
+/My name is Doug and I'm the owner/i
+/web design firm/i
+/remove you from my list/i
+
+/I do NOT need legal help/i
+/speakeasymarketinginc.com/i
+/higher up in Google/i
+/link from his website/i
+/changes to their algorithm/i
+/when you rank at the top/i
+/convert2sales@gmail.com/i
+/highmindsdesign@gmail.com/i
+/basic sales optimizations/i
+/increase traffic on your website/i
+/alicethomas.mkt@gmail.com/i
+
+/Russell Claxon/i
+/revrussellc@twc.com/i
+/service dog trained/i
+
+/and do you accept credit card/i
+/accept major credit card/i
+/advise me the method of of payment you do accept/i
+
+/rockstarseo/i
+/seriousdesign1/i
+/rise2marketing/i
+
+/growth capital loans/i
+/quick and easy short term loan/i
+/cash advance/i
+/work capital/i
+
+/take a quick moment/i
+/specific strategies in mind/i
+/increased traffic/i
+/Web Needs Analysis/i
+/expertdigitalmarketers/i
+
+/happy with your website/i
+/possibly a redesign/i
+/bestwebdesignusa/i
+/talented web developer/i
+/talented web designer/i
+
+/I'm a digital marketer/i
+/search engine optimizer/i
+/Google's algorithms/i
+/rank much higher/i
+/other search engines/i
+
+/B2B Email List/i
+/interested in reaching out/i
+/Professionals Database/i
+/complete contact details/i
+/verified email address/i
+/Decision Maker/i
+/do not wish to receive future emails/i
+
+/changes, upgrades, or enhancements/i
+/make to your site/i
+/rebuilding the site completely/i
+/design amazing looking/i
+/websites for small business/i
+
+/free time in the next few/i
+/for a quick call/i
+/ranklinesolutions/i
+
+/Let me know what you think/i
+
+/64 Autumn Drive/i
+/bestversionmedia.com/i
+/Best Version Media/i
+/looking for a sponsor/i
+/sponsor in your industry/i
+/Can we set up a time to discuss/i
+/This publication is mailed/i
+
+/Oldham County Living/i
+
+/things you'd like to change/i
+/change or update on your site/i
+/build a new site/i
+/new site completely/i
+/web developer/i
+/my rates are affordable/i
+/free consultation with you/i
+/502-437-9466/i
+/5024379466/i
+/webdesigngurus/i
+
+/We should really talk as soon as possible/i
+/guarantee 100%/i
+/page 1 of Google/i
+/Yahoo and Bing/i
+/page 1 result/i
+/ranking sites/i
+
+/optimizing your site/i
+/traffic from the search engines/i
+/optimization services/i
+
+/animated marketing video/i
+/increase your online/i
+/custom interactive animated videos/i
+/ animated video samples/i
+
+/circle357marketing@gmail.com/i
+/5292348975/i
+/marketing7partners@gmail.com/i
+/Barnypok/i
+
+/^58[0-9abcdef]{11}$/i
+/^59[0-9abcdef]{11}$/i
+/^6[0-9abcdef]{12}$/i
+/^5[0-9abcdef]{12}$/i
+
+/I am hearing impaired/i
+/that is the reason why contact you through via email/i
+/Let me know if you can handle that for me/i
+/do you accept credit cards/i
+
+/increase traffic to your website/i
+
+/Are you looking for an increase in business/i
+/better rankings/i
+/higher traffic/i
+/better sales/i
+/business increase/i
+/free consultation/i
+
+/marketing manager at xxx/i
+/online casino/i
+/unique and incredible offer/i
+/Do not hesitate/i
+/equal welcome bonuses/i
+
+/Qualified Business Leads/i
+/your sales team/i
+/coordinated by a smart tool/i
+/free trial/i
+
+/ran a report on your site/i
+/massive amount/i
+/additional web traffic/i
+/higher positions/i
+/web searches/i
+/more about what I do/i
+
+/a_3_3/i
+/sendemail/i
+
+/arachni_name/i
+/arachni/i
+
+/context\.get/i
+/resp\.getWriter/i
+/\.close\(\)/i
+
+/Dear Customer/i
+/I hope this email of mine/i
+/in good spirit/i
+/Reverend/i
+/total pick up price/i
+/excluding shipping charges/i
+/accept credit cards/i
+
+/301 Moved Permanently/i
+
+/I'm an app developer/i
+/many different types of apps/i
+/App Development Services/i
+/Android, iOs/i
+/ios, android/i
+
+/I am a designer/i
+/developer with the skills/i
+/making their websites really shine/i
+/website shine/i
+/based on how your site looks/i
+/Would you be willing.*call with me/i
+
+/newslentarus@mail.ru/i
+/Russia created a crypto currency/i
+/SibCoin/i
+/Siberian chervonets/i
+
+/goooglexperts@gmail.com/i
+/Google Page 1 Ranking/i
+/SEO Company/i
+/no spamming/i
+/no gimmicks/i
+/White hat strateg/i
+
+/Dear Sir.Madam, I'm/i
+/Email me back with the total quote/i
+/Outdoor Vinyl Banner Quantity/i
+/text will read the following/i
+
+/Let The Peace Of Christ Rule/i
+/You Were Called To Peace/i
+/Colossians/i 
+/Do you accept Master/i
+/visa card as a method of payment/i
+
+/Hello Sir.Madam My name is/i
+
+/and I do understand that you handle some/i 
+/Credit Card is accepted/i
+/as a form of payment/i
+
+/site optimizer/i
+/specializes in making sure that/i
+/Google knows how to find/i
+/searches online for services/i
+/the clients you want/i
+/shows up at the top/i
+/showing up on the top/i
+/a lot of traffic on their sites/i
+/get a ton of business/i
+/Powell Williams/i
+/Website Optimizer/i
+
+/wanted to reach out to your company/i
+/is available to lease or purchase/i
+/custom phone numbers/i
+/powerful marketing tool/i
+/Once the number is sold/i
+/Increase Call Volume/i
+/Brand Awareness/i
+
+/ cialis /i
+/ Synthroid /i
+
+/You have a great business/i
+/your site doesn't seem to convey/i
+/exactly how great it is/i
+/adding some different things to the site/i
+/short video clips/i
+/moving graphics/i
+/eye catching text/i
+/calls? to action/i
+/really love to work on your site/i
+
+/business boost on your website/i
+/sites to launch/i
+/massive revenue/i
+/I can share them with you/i
+/opportunity to have some pretty quick wins/i
+/increase traffic/i
+/Moses Johnson/i
+
+/excel2marketing@gmail.com/i
+/206.*338.*1959/i
+
+/huge increase in.*traffic/i
+/increase the amount of customers/i
+/interested in your products and services/i
+
+/l.miller@themerchantlendr.com/i
+/Your company caught my eye/i
+/partner with companies like yours/i
+/providing biz capital.funding/i
+/information about our funding programs/i
+
+/judy@makebusinessontop.com/i
+/Internet Marketing Company/i
+/GET YOUR WEBSITE/i
+/ON TOP OF GOOGLE/i
+/GUARANTEED RESULTS/i
+
+/adi@ndmails.com/i
+/Just wanted to ask if you/i
+/interested in getting external help/i
+/with graphic design/i
+/We do all design work/i
+/banners.*advertisements.*photo/i
+/fixed monthly fee/i
+/charge for each task/i
+/share my portfolio with you/i
+
+/pharmacy near me/i
+/canadianpharmacy/i
+/Technology budget/i
+/Managed IT Services/i
+/cloud solutions/i
+
+/needs to improve/i
+/outranking you/i
+
+
+/teen pregnancy/i #100
+/Teen Mom/i #100
+/teen birth/i #100
+/Pornography/i #100
+/asian porn/i #100
+/webcam/i #100
+/Gay Porn/i #100
+/specialty porn/i #100
+/Porn Star/i #100
+/porn/i #100
+/pregnant japanese/i #100
+/pregnant tyoung/i #100
+/slave teen/i #100
+/get pregnant/i #100
+/forced teen/i #100
+/asian street meat/i #100
+/cute pregnant/i #100
+/sex chat/i #100
+
+/fuck/i
+/shit /i
+/bitch/i
+
+/mail\.ru/i
+/yandex\.ru/i
+
+/design2excel/i
+
+/die\(/i #100
+
+/Testosterone/i
+/Nandrolone/i
+/Steroid/i
+/relevant traffic/i
+/In this post/i
+/looking for funding/i
+/our market research/i
+/Trenbolone Acetate/i
+
+/misspelled/i
+/pet peeve/i
+/mistakes off my website/i
+/spellingscan/i
+
+
+/Sed ut perspiciatis/i
+/unde omnis iste natus/i
+/accusantium/i
+/doloremque/i
+/lorem ?ipsum/i
+
+/if you are like most/i
+/big email list/i
+/make any sales from it/i
+/newsletters/i
+/customer retention/i
+/boost in revenue/i
+/sizable customer list/i
+
+/lorem ipsum/i
+/Sed ut perspiciatis/i
+/unde omnis iste natus/i
+/error sit voluptatem accusantium/i
+/doloremque laudantium/i
+/totam rem aperiam eaque ipsa/i
+/voluptas nulla pariatur/i
+
+/1st cash/i
+/payday loan/i
+/payday/i
+/loan lenders/i
+/quick payday loan/i
+
+/Please go ahead and get back at me with the formal quote/i
+/like to go ahead and purchase/i
+/SAY NO TO TERRORISM/i
+
+/Get famous on social media/i
+/social media followers/i
+/lowest prices/i
+/100. Safe/i
+/No password/i
+/more fans and traffic/i
+/boostmyfollowers.com/i
+
+/workers to be safe/i
+/at your job site/i
+/ensuring safety/i
+/Online interactive/i
+/OSHA/
+/trained employees/i
+/Learning Management System/i
+/www.OSHAPractice.com/i
+
+/checking out your website/i
+/very impressed with the quality/i
+/animated videos/i
+/help explain their services/i
+/animated video/i
+/companies message across/i
+/Character Animation/i
+/Motion Graphics/i
+/Whiteboard videos/i
+/affordable rates/i
+/explainmybusiness/i
+
+/just looking at your website/i
+/Elise Michel/i
+/marketing intelligence/i
+/I help businesses/i
+/ideal target market/i
+/10miles radius/i
+/their mobile and computer/i
+/find their ideal customers/i
+/show their marketing message/i
+/elisemichel/i
+
+/Fraudulence/i
+/Fake company/i
+/snatch your payment/i
+/Shenzhen/i
+/Guangdong/i
+
+/upgrade your website/i
+/modern, mobile website/i
+/Home page design/i
+
+/foldable drone/i
+/Super cheap/i
+/Limited Stock/i
+/dronekings/i
+/personal and professional/i
+/drone needs/i
+/Worldwide Shipping/i
+/Don't like our info/i
+/pleaseremove/i
+
+/Peels can help to eliminate/i
+/old deficiencies/i
+/skin layer/i
+/superficial peeling/i
+/minor wrinkles/i
+/Profound peeling/i
+/beauty hospitals/i
+
+/building or redesigning/i
+/redesigning your site/i
+/Charles Terry/i
+/charlesterry/i
+/7081100458/i
+
+/Thought to introduce myself/i
+/VOIP business/i
+/phone systems/i
+/fraction of the cost/i
+/slash their cost/i
+/eliminating costly/i
+/unnecessary features/i
+
+/selling the domain name/i
+/interested in acquiring it/i
+/namesailor/i
+
+/Dear Business Owner/i
+/supercharge your business/i
+/generate up to/i
+/more traffic/i
+/toll.?free number/i
+/exclusive phone number/i
+/calls will ring/i
+/incredible marketing tool/i
+/instant-mobile/i
+
+/Hi team at/i
+/article placements/i
+/article written which will/i
+/Payment is made via Paypal/i
+/Webcontentzone/i
+
+/Oakley/i
+/Sunglasses/i
+/only today/i
+/isunglassesshop/i
+
+/just dropping in a quick line/i
+/send some great article ideas/i
+/article ideas/i
+/guest post/i
+/suggested ideas/i
+/FREE CONTENT/i
+/backlink/i
+/body of the article/i
+/great topic ideas/i
+
+/business to the next level/i
+/Facebook Ads/i
+/proven track record/i
+/helping such businesses/i
+/get more customers/i
+/exponential growth/i
+/same results for your business/i
+/Can I have [0-9]+ minutes of your time/i
+
+/I just have one question/i
+/forward it to right person in your company/i
+/acquiring domain name/i
+/memorable name/i
+/related to your business/i
+/redirect visitors/i
+/current Website/i
+/The asking price is only/i
+/go to GoDaddy/i
+
+/Please click on ads/i
+/Google Adsense/i
+/blade for advertising/i
+
+/continuously searching online/i
+/for articles that can aid/i
+
+/really appreciate this post/i
+/looking all over for this/i
+/Thank goodness I found it on Bing/i
+/You've made my day/i
+
+/344444443/i
+
+/echo\(/i
+
+/whoami/i
+
+/be bottle/i
+/clients with a little extra gift/i
+/a moment of your time/i
+
+/Hope you are doing well/i
+/struggle to get the right no of clients/i
+/analyse and improve your Revenue/i
+/look on 5 questions below/i
+/any Online Business/i
+
+/marketing yet for your site/i
+/immediate interested traffic/i
+/buyers to your website/i
+/social media channels/i
+/getting more likes/i
+/social mentions/i
+
+/Hello. And Bye./i
+
+/domstates/i
+
+/Hello I just checked out your website/i
+/your site takes longer than 3 seconds/i
+/If your site takes so/i
+/Long Time To Load/i
+/you are losing more than half your traffic/i
+
+/We offer you the opportunity to advertise/i
+/Look at an interesting offers for you/i
+/I want to offer the possibility/i
+/commercial offers or messages/i
+/through feedback forms/i
+/included in the white list/i
+/FeedbackForm/i
+
+/Thy Kingdom Come/i
+/surcharge for credit card payment/i
+
+/Instagram growth/i
+/Social Media agency/i
+/Instagram marketing/i
+/generate an engaged following/i
+/No fake accounts/i
+/laicos-marketing/i
+
+/Family Owned Dispatch Service/i
+/Towing Dispatch Services/i
+/towingdispatchservices.com/i
+
+/TenDa Plastics CO/i
+/located in DongGuan City/i
+/possible business opportunities/i
+/tendaplastics.com/i
+
+/upload_avatar/i
+
+/Tuesday Cleaning Solutions/i
+/In the event that you ever need a new provider/i
+/I do provide free and preliminary estimates/i
+/help you thrive in your business/i
+
+/The Chat Inc/i
+/24-7 live chat service/i
+/live attendant availability/i
+/increase your website conversion/i
+/Free non-qualified chats/i
+/thechatsinc/i
+
+/yandex.ua/i
+/yandex.ru/i
+
+/premium woven and printed labels/i
+/best craftsmanship in the industry/i
+/help with special requests and projects/i
+
+/reduce your merchant fees/i
+/best merchant processors/i
+/lower priced merchant/i
+/emerchantpartner/i
+
+/win a new iPhone/i
+
+/longer than [0-9]+ seconds to load/i
+/paying for traffic/i
+/Long Time To Load/i
+
+/I came across your website here at/i
+/listed as a resource on my blog/i
+/georgemartjr/i
+/links are manually approved/i
+/having your site included/i
+
+
+/must be too good to be true/i
+/some sort of catch/i
+/high converting video commercial/i
+/DON'T HAVE TO DO ANYTHING AT ALL/i
+/NO MONEY UPFRONT/i
+/Tried and Tested Media/i
+
+/Website branding can be improved/i
+/great looking Logo for your Business/i
+
+/Invite You to Review Our Product/i
+/American Beauty Association/i
+/beauty enthusiasts like you/i
+/test our makeup brush/i
+/centtip/i
+/Mieoko Flat Top Brush/i
+
+/lucrative business opportunity/i
+/partnership basis/i
+/You are a business broker/i
+/flat consulting fee for services/i
+/reasonable flat fee for your services/i
+
+/Acquisio/i
+/PPC campaigns/i
+/our services will definitely benefit/i
+/make reporting easy/i
+/have your campaigns running more efficient/i
+/machine learning marketing tool/i
+/SEM accounts/i
+/reduce campaign management/i
+/folks scale SEM/i
+/this technology self-improves/i
+/longer lifetime customer value/i
+/attain monthly budgets/i
+/proven SEM results/i
+/904-432-1865/i
+
+/user_pass/i
+
+/can provide services for escrow/i
+/I am purchasing a used excavator/i
+/purchase agreement requires escrow/i
+/provide escrow service/i
+/be the closing agent for this purchase/i
+/purchase agreement and the escrow instruction/i
+
+/This is \w+\s+from China/i
+/Goko Mold Technology/i
+
+/My company wants to purchase some raw material/i
+/This raw material is the major material/i
+/our company uses in production and for research purposes/i
+/my boss wants to visit your country to source for this raw material/i
+/raw material to my boss so that we can share the profit/i
+/Get back to me immediately for more details about this business/i
+
+/I own a news website/i
+/organic traffic/i
+/Moz Domain Authority/i
+/link exchange/i
+/guest article swap/i
+
+/Hereby bring to your esteemed company/i
+/attention regarding our available/i
+/1,000,000 barrels and/i
+/D2 GAS OIL/i
+/100,000 Metric Tons/i
+/50,000,000 Gallons/i
+/on board in Rotterdam port/i
+
+/traumatic pistols/i
+/shooting automatic fire/i
+/Modified Makarov/i
+/pistols with a silencer/i
+/Combat Glock 17/i
+/original or with a silencer/i
+/other types of firearms/i
+/Gunrussia/i
+
+
+/Hochwertige/i
+/Produzent/i
+/Fabrikverkauf/i
+/gleichen/i
+/günstiger/i
+/Reifentüten/i
+/mit und/i
+/Klebebänder/i
+/Malerkrepp/i
+/Malerfolie/i
+/Werkzeug/i
+/Spänesäcke/i
+/Alles für/i
+/freundlichen/i
+
+/Are you available for more work/i
+/I have a website/i
+/#[0-9]+ on Google/i
+/Water Heater Installation in Louisville/i
+/send the leads to/i
+/need to find another partner/i
+/Can you handle a couple more jobs/i
+/completely booked out/i
+
+/saw a post mentioning your site/i
+/buying email lists/i
+/Yellow Pages scraper/i
+/B2B Leads Miner/i
+/I cannot find the link but you can google it/i
+/own B2B leads/i
+/buying your own lists/i
+
+/Hello there, My name is Aly/i
+/you would have any interest to have your website/i
+/promoted as a resource on our blog/i
+/alychidesign.com/i
+/do-follow broken link/i
+/broken link resources/i
+/up to date resources for our readers/i
+/resource on our blog/i
+
+/ZGF2ZXN0b3dpbmdreS5jb20/i
+
+/We are direct gold and diamond seller/i
+/gold and diamond/i
+/ready and able to deliver the consignment/i
+/Gold Bars/i
+/Nugget Purity/i
+/United States Dollars/i
+
+/post your jobs to over a hundred job boards/i
+/at no cost for a week/i
+/Post your jobs for FREE today/i
+/TryProJob.com/i
+/Pro Job Network/i
+
+/explainer video service/i
+/Adding a video to your website/i
+/increase your conversion rate by/i
+/US-Based team of writers/i
+/prepare you a potent script/i
+/record a voiceover/i
+/custom animate your video/i
+
+/MDMA/i
+
+/Tired of Waiting FOREVER/i
+/earn a profit online/i
+/NEW Web-App Allows/i
+/Legally Hijack Traffic/i
+/Authority From Wikipedia/i
+/Affiliate Commissions/i
+/No Previous Skills Or Experience Required/i
+/COMPLETE Newbie and Get RESULTS/i
+/centrtele@mail.com/i
+/TrafficJacker/i
+
+/I have previously sent you a message regarding a transaction/i
+/left by my late client/i
+/before his sudden death/i
+/after going through your profile/i
+/strongly believe that you will be in a better position/i
+/shared among charity organizations/i
+/transaction is 100% risk free/i
+/for more explanations about the transaction/i
+
+/Hello, My name is Tony Curry/i
+/www.MowScape.com/i
+/Landscaping Ideas Available/i
+/Would you be open to checking it out/i
+
+/As a local Google coach/i
+/I can show you how to improve your online presence/i
+/Better online presence equals more patients/i
+/I am a mature professional who can explain/i
+/generate more business through Google My Business/i
+/as well as other online strategies/i
+/Achieving a better online presence is not as difficult/i
+/rewards are nearly immediate and quite tangible/i
+/Google My Business Coach/i
+/Truly 360/i
+/Trusted Google Partner/i
+/502 341 8524/i
+
+/Our customer want to speculate/i
+/your region for good benefit/i
+/Our patron want to fund/i
+/in your district for good returns/i
+/Please note an important promotion for you/i
+/973 650 09688/i
+/mh@indobsc.com/i
+
+/I represent an investment company working/i
+/financing realistic and profitable projects/i
+/depending on the project feasibility and renewable tenure applies/i
+/You can always drop me an email if you have any questions or you'd like to receive further information about our/i
+/lending service/i
+/Your positive response in your earliest convenience/i
+/We are also looking for financial consultants and brokers with a qualified background/i
+/work with us as our agents and representatives/i
+/In case you are interested and have clients who need loan/i
+
+/Cost Estimation . Quantity Take-Off/i
+/We Provide Cost Estimation/i
+/All Construction Divisions Estimation Hub/i
+/Offers an appealing discount on estimation/i
+/Giving us an opportunity to provide you the quality cost estimate/i
+/Your wish is our command/i
+/Estimation hub offers the most practical/i
+/We Are Specialized In The Following Trades/i
+/Estimation Hub Inc/i
+/281-509-9327/i
+/207 Green way Plaza/i
+
+/Do you miss your calls/i
+/due to your busy schedule/i
+/too many people calling your business/i
+/Live Phone Answering Service/i
+/Our Call Receptionists/i
+/Impress Your Callers Every Time/i
+/So You Can Focus On Your Work/i
+/Callanswer24/i
+
+/to the IT Department/i
+/Cloud Authorities/i
+/national technology brokerage/i
+/telecommunication audits/i
+/cloud migrations/i
+/us to lend our expertise/i
+/Lower internet/i
+/phone expenses/i
+/Migrate to the cloud/i
+/Create network efficiency/i
+/cyber-security/i
+/619-736-8904/i
+/cloudauthorities.com/i
+
+/bitcoin/i
+/cryptocurrenc/i
+/crypto currenc/i
+
+/Here at ATC Express/i
+/all your shipping needs/i
+/we care about your shipments/i
+/631.585.7000/i
+/atcexpresstrucking/i
+/atcexpress.com/i
+
+/For less than .* per month/i
+/I can get hundreds of people/i
+/ready to buy to visit your site/i
+/Interested in how this works/i
+/Just reply to this email address for more information/i
+/highconvertingvisitors/i
+/Reply here for details/i
+/hundreds of high converting visitors/i
+
+/Receive \w+ of people/i
+/ready to buy delivered/i
+/to your website for less than/i
+/Would you like to learn more/i
+/Simply reply to this email address/i
+
+/domstat.su/i
+
+/You Need Leads/i
+/Sales, Conversions, Traffic/i
+/I WILL SEND [0-9]+ MILLION MESSAGES/i
+/VIA WEBSITE CONTACT FORM/i
+/Since you're reading this message then you're/i
+/contact form advertising/i
+/send your ad to people via their Website Contact Form/i
+/IF YOU ARE INTERESTED/i
+
+/Enjoy \w+ of people who/i
+/are ready to buy sent directly/i
+/to your site starting at only/i
+/Interested in finding out more/i
+/Reply to this email address for details/i
+
+/For only \S+ every month/i
+/I can get tons of people/i
+/who are ready to buy to come to your website/i
+
+/Starting at just \S+ monthly/i
+/I can get \S+ of high converting visitors/i
+
+/Get \S+ of people/i
+/who are ready to buy delivered/i
+/to your website for less than/i
+/Interested in finding out more/i
+
+/(Enjoy|get|receive) \S+ of (converting|high converting|qualified)? ?(buyers|people|visitors) (who are|delivered|sent|to)|to your website for (only|just|the low price of)/i
+/Would you like (more details|to learn more)/i
+/Just send us a reply/i
+
+
+/Guarantee Estimation/i
+/deliver material take offs/i
+/cost estimating services/i
+/for construction projects to contractors/i
+
+/and also advise if you accept credit card/i
+
+/Crosshair Media Placement/i
+/no retainer or agency fees/i
+/team of connected media buyers/i
+/stop by to introduce myself/i
+/crosshairmedia/i
+
+/blog writing service/i
+/amplify the personal experience/i
+/distinguishable from your competitors/i
+/Our packages are unmatched/i
+
+/Are You interested in an advertising service/i
+/that charges less than $[0-9]+/i
+/sends \S+ of people/i
+/who are ready to buy/i
+/directly to your website/i
+
+/Reply to: \S+ to get more info./i
+
+/Please send me a reply here: \S+/i
+
+/Adultingdigest/i
+/The Failure Report/i
+/Joint Effort Business/i
+/jointeffortllc/i
+
+/Get a New Website for/i
+/With all the below functionality and at/i
+/Responsive Layout/i
+/Content Management System/i
+/Image Gallery Form Pages/i
+/Would you like to see our Demo websites/i
+/Destum/i
+
+/I will like to make a inquiry on Vinyl banners/i
+/Kindly get me the price of [0-9]+ pieces/i
+/advise on the Payment method you do accept/i
+
+/You looking for a new supplier from China/i
+/we are a manufacturer carry all size/i
+/we supply auto LED lighting/i
+/reply us for price lists/i
+
+/I'm looking for a .* that can take on more customers/i
+/exposure on some mainstream media sites/i
+/Can you handle more customers/i
+
+/Finance option for Subprime clients/i
+/ eLease Funding/i
+/equipment finance company/i
+/not a federally regulated bank/i
+
+/jballelectronics.com/i
+
+/Opportunism in business expansion/i
+/FINANCIAL capital/i
+/NGOs entrepreneurship/i
+/seeks to invest through equity/i
+/loans or guarantees/i
+/allocations of public funds/i
+
+/buy a link/i
+
+/website design/i
+
+/bid submission deadlines/i
+/getting accurate estimates/i
+/fail to bid because/i
+/lack the personnel to do the estimates/i
+
+/Aerial Impressions/i
+/photographing businesses and homes/i
+/images from various aspects/i
+/deliver digitally free from any copyright/i
+/tailoredaerialpics.com/i
+
+/Is your business on Youtube/i
+
+/Dear Entrepreneur/i
+/expected traffic and online business/i
+
+/I didn't see your business/i
+/page [0-9]+ on .*Google search/i
+/You can be on page one/i
+/growing your business/i
+/Xpanda-Brand/i
+
+/I came across your website today/i
+/when searching for your website keywords/i
+/Lawyer in your City/i
+/show up in the top of Google/i
+/organic listings/i
+
+/Do you consider your website promotion/i
+/see remarkable results/i
+/easiest and proven ways to/i
+/promote your website/i
+/Search engines like/i
+/markmidd.com/i
+
+/jduredssker/i
+
+/By reading this message then/i
+/ads submitted via web contact forms/i
+/We can send your ad to people/i
+/via their contact us form/i
+/The advantage of this kind of promotion/i
+/messages sent through contact forms/i
+/automatically whitelisted/i
+
+/designs and builds custom workholding/i
+/including custom chucks and hydraulic fixtures/i
+/I would like to schedule a time to talk about our capabilities/i
+/discuss your current and future needs/i
+/accommodate any request you may have/i
+
+/The new revolutionary Dating app/i
+/Video-chat through the app/i
+/Call through the app/i
+/below and find your soul/i
+/dating app/i
+
+/Action Specialties/i
+/manufacturing and warehousing services/i
+/What problems or bottlenecks are you experiencing/i
+
+/I checked out your website/i
+/I help trainers get more leads/i
+/A few benefits of working together/i
+/Leads on 100% auto-pilot/i
+/Position your brand within your localpersonaltrainergoogleads/i
+
+/Am contacting you to partner with me/i
+/secure the life insurance/i
+/avoid it being confiscated/i
+
+/Back in 1989, humanity learned about MMM/i
+/Then the opportunity to achieve its financial goals became available/i
+/New markets were opened and the world changed with MMM/i
+/Now MMM is the largest international cryptocurrency company/i
+/Crypto MMM/i
+/blockchain community/i
+/multi-level affiliate program/i
+/considering selling your domain/i
+/it could you let us know by going to/i
+/bigwidewebpro.com/i
+
+/AS WELL LETS KNOW THE MODE OF PAYMENT WHEN WE PURCHASED FROM YOUR COMPANY/i
+/I will like to know the type of credit card you receive for payment/i
+/Hi, I tried to call over earlier today and unfortunately couldn't connect with anyone/i
+/oversees your website/i
+/We have lots of work for you if all goes well/i
+/sarahkyle@tutanota.com/i
+/Looking for fresh buyers/i
+/Want more visitors for your website/i
+/Receive hundreds of keyword targeted visitors/i
+/visitors directly to your site/i
+/Boost revenues fast/i
+/results in as little as/i
+
+
+/Sex Sites/i
+/Adult Hookups/i
+/Sex Dating/i
+/girls want to meet/i
+/sex in your city/i
+/Adult Sex Dating/i
+/Dating App/i
+/beautiful women/i
+/women want sex/i
+
+
+
+/Would you like to submit your business/i
+/thousands of advertising sites/i
+/ad sites monthly/i
+/For one small fee/i
+/virtually unlimited traffic/i
+/Check out our site for details/i
+
+
+/Claritin will assist with allergies/i
+/watering eyes,itchy throat,etc/i
+/placebo-controlled trial/i
+
+/my name is James/i
+/my name is Jim/i
+/I was doing some niche research/i
+/research for a client and came across/i
+/I thought I'd drop you a quick note on your contact form/i
+/traffic source that could be a big/i
+/buymobiletraffic.club/i
+
+/Your balance has accumulated/i
+/the amount you earned for watching ads/i
+/We also officially inform you about/i
+
+/file_links/ #100
+
+/A proven way to make money on the Internet/i #10
+/Earnings on the Internet/i #10
+/Fast and Big money on the Internet/i #10
+/money on the internet/i #10
+
+/These are indeed the end times/i #10
+/but most are in the Falling Away/i #10
+/Trust God that He will lead you/i #10
+/The real body of Christ/i #10
+/is outside of the Church/i #10
+/We know what’s going to happen/i
+/we will send you prophecy/i  #10
+/text email or postal contact/i
+
+
+/casino slots/i #10
+/slots casino/i #10
+/ casino /i
+/ slots /i
+
+/Hello\. And Bye\./i #10
+/dаting frеe online/i #100
+/The bеst girls fоr seх/i #100
+/Aged.*Twitter accounts/i #100
+/Аdult dating оnline|adult dating site|Adult online dating|free dаting sitеs|Adult amеricаn dating|free dating site|site for sex/i  #100
+/Dating site for seх|Sех dating site|sex оn а first dаtе|sex dating online|dating for sex/i #100
+
+/Adult numbеr 1 dating aрp/i #100
+/dating аpp itunes|dating app for itunes|dating app for apple/i  #100
+/dating аpp android|dating app for android/i  #100
+/Find уоursеlf а girl|girl fоr thе night|women for sеx|girl for sex|girls for sex|girls fоr the night|sexy girls/i  #100
+/use Live Chat|Live Chat Lead Generation|leads and paying customers/i  #100
+/Раssive Incomе Suсcess Stоry/i #100
+/forms are located on many sites|send business offer wholly legitimate way|sending letter through feedback forms|send appeal wholly lawfully|send appeal entirely lawful|possible to send message entirely legal|sending message through feedback|possible to send business proposal|proposal utterly legitimate|sending proposal through contact forms|no personal data is used|messages are sent to forms specifically designed to receive messages|Forms do not get into spam because such messages are considered important|FeedbackForm2019/i #100
+
+/salesboost.xyz/i #50
+/bitсоin milliоnаirе/i #100
+/bitcoin/i #7
+
+/quick trip to Tomorrow-land|won’t even need a crystal ball|competition just can’t hold a candle|TalkWithCustomer/i #100
+/see you are doing amazing as a company|webtraffic4you/i #100
+/We have ran an analysis on|seriously impacting your ranking|increasewebvisibility/i #100
+/Accounts Payable Or Domain Owner|search engine registration/i  #100
+/Guess, Nike, Adidas|Moncler, Canada Goose|Coach, Armani, Chanel|Burberry, Dior and CL|products at wholesale prices/i #10
+
+/How to еаrn on invеstmеnts in Сryptoсurrеncy from/i #100
+/Раid Surveys: Маkе .* Оr Evеn more Per Wееk/i #100
+
+/Hi, we noticed something seems wrong with your website|It's a great site for sure, BUT it's not getting as many visitors as similar businesss|primetraffic.xyz/i  #100
+
+/please transfer this message to your CEO|We are the domain registration and solution center in China|we received an application from Kanghong Ltd requested|as their internet keyword and China|But after checking it, we find this name conflict with your company name or trademark|6012, Xingdi Building, No. 1698 Yishan Road, Shanghai 201103|chinaregistry/i #100
+/Good whatever time of day it is where you are|We send Your messages via contact forms|to the sites of business organizations via all domain zones of the world in all languages/i #10
+/My name’s Eric, and I just found your site|You showed up at the top of the search results, so I checked you out|after someone like me stumbles across .* what usually happens|Is your site generating leads for your business|land on a site wind up leaving without a trace|what if there was an easy way for every visitor to|to get a phone call from you INSTANTLY|Talk With Web Visitor|talkwithwebvisitor/i #100
+/my name is Eric and I was looking|a few different sites online and came across your site|your website is very impressive|I am seeing your website on the first page of the Search Engine|Have you noticed that [0-9]+ percent|visitors who leave your website will never return/i #100
+
+/SEO Specialist|SEO Link Building/i  #10
+/backlinks/i #3
+/bit\.ly\// #4
+/increase Traffic/i #4
+
+/buypillsnowonline/i #100
+
+/In the past .* years we have built over .* websites/i #10
+/We will do a complete marketing analysis for your business/i #10
+/Social media pages/i #5
+/DebbieSilver2112@gmail.com/i #10
+/hilkom-digital/i #10
+
+
+/Оnline Саsinо|Plау Free Slots|casino games|Jackроt Slots|free speens/i #100
+
+/\[url=/ #100
+/click.{0,100}Google AdSense/i #100
+/cybersex/i #100
+/SEO Link Building|unlimited number of links/i #10
+/ranking keywords|SEO metrics/i #10
+
+/apply for business funding|no impact on your credit score|avoid marketing in the future/i #10
+/Sending messages exploitation contact forms|check our service without charge|FeedbackMessages|contactform_18|This offer is created automatically/i #10
+/I simply couldn't leave your web site|suggesting that I actually enjoyed the usual|info a person supply on your guests|Is going to be again frequently|in order to check up on new posts/i #10
+/This commercial message sent from/i #10
+/\?PAGE_NAME=/ #10
+
+/limited time SPECIAL with this promotion/i #10
+/Inevitably discover your true potential and purpose/i #10
+/[0-9]+ backlinks with [0-9]+ domains/i #10
+/[0-9]+ - [0-9]+$ Per Account/i #10
+/pornhub|fetish|porn pic|fuck/i #10
+
+/A (one|two|three|four|five|six|seven|eight|nine|ten) page pro Website/i #10
+/According to my past experience and knowledge/i #5
+/videomarketingguru/i #10
+/Сrуptoсurrеncу|Вinary oрtiоns/i #10
+
+/Approx .* day delivery with FREE MOCKUP/i #10
+/As you know, Google is constantly changing its SEO algorithm|adding an explainer video|increases website rank|keeps customers on your page/i #10
+
+/Avoid future marketing mails here/i #10
+/To unsubscribe click here/i #10
+
+/Before you click, can you guess what it is/i #10
+/But trust me for one last time/i #10
+/219-215-3705/i #100
+/Each success is entirely possible truth depend on your efforts not others/i #10
+/Free [0-9]+-minute initial session/i #10
+/From building a website to promote a product A to Z free videos and guide/i #10
+/ginaphotoediting|globalreachmarketing.best|fasttrafficsolutions|explainthebiz.online|silkroadmedsonline/i #10
+/some news just came out/i #10
+/bit\.ly/i #5
+
+/I know its hard to beleive someone who fill your website/i #10
+/I stumbled across your business, but I have a question/i #10
+/if you have more efforts and dedication, success can take near your foots/i #10
+/Join and see the first month results, Just one month/i #10
+/Learn how to build a successful Online Business/i #10
+/Listen, we all have a desire to do something more memorable with our lives|impact others and to leave a legacy/i #10
+
+/marketing videos/i #5
+/increase website traffic|close more business/i #10
+/Online businesses are growing revenue/i #10
+/Our apologies if this reached you in error/i #10
+
+/Running out of ideas and burning resources to increase business is not sustainable|Getting new customers is NOT a mystery/i #10
+/Should I send over some industry-specific samples/i #10
+/What is your feeling about success/i #10
+/more new customers in the next/i #10
+
+/Binаry optiоns/i #10
+/per weек:/i #10
+/mining сrуptocurrеnсу . crypto/i #10
+/Вinаry oрtiоns . crурtо/i #10
+/getpassiveincome/i #10
+/[0-9]+ WЕВSITЕS ТО MАКE/i #10
+
+/there is a 100x decrease in Leads when a Lead is contacted within/i #10
+/is created automatically. Please use the contact details below to contact us. Contact us/i #10
+/are thrilled. Thank you for providing a real and effective tool to generate REAL leads/i #10
+/TalkWithCustomer/i #100
+/www.hilkom-digital.de|cheap-seo-packages/i #100
+/SEO at cheap rates/i #100
+/unique domains links/i #100
+/visitors from social media/i #100
+/I am in urgent need of your services/i #10
+
+/Louis Vuitton Designer Handbags/i #100
+/designeroutlets.online/i #100
+
+/13482942768/ #100
+/Some services on your site interest me, but I would like some more information/i #10
+/Please call me soonest during office hours at|I wish to acquire some services from you and|like to have more information from a responsible sales person./i #10
+/Ray-Ban Sunglasses|framesoutlet.online/i #10
+/write fresh blog and website content|Let me provide well-researched/i #10
+/converting it into videos to promote/i #10
+/CWT Your Best Customer|drive tons of new customers/i #10
+/Аdult dating amеriсan online/i #10
+/Dаting fоr seх/i #10
+/Аdult seх dаting/i #10
+
+/Email me back for some explainer video samples|Jerusalem and California/i #10
+/We have already optimized more than/i #10
+/how to create bulk account in facebook|buy gmail accounts in bulk|cheap pva gmail account|We can provide you as much you need/i #10
+/Find my profile with phone number here/i #10
+/dropshippingincome.com/i #100
+/You keep all of the profit/i #10
+/niche turnkey dropshipping/i #100
+/ranks with quality web2.0 Article links/i #10
+/variety of non prescription drugs/i #10
+/explainer videos|I run an animation studio that makes/i #10
+
+/Seх dating in|Girls +for +seх +in|casual sex|my pussy is at your disposal|Sех dаting site|Dating sitе fоr sex|sеx on a first dаte|sеx immediatelу|Dаting for sex|exрeriencеd girls frоm|Bеаutiful girls fоr sех/i #100
+/BEST ЕARNINGS FОR ALL FROM/i #100
+/Invest in Bitсоin|Eаrnings оn thе Вitсоin cоurse|bitcoin course/i #100
+/unique domains backlinks package/i #100
+/What's the еаsiеst waу tо еarn/i #100
+/datingsexygirls/i #100
+/Adult dating|Dаting site fоr|Adult onlinе dating|Аdult canadian free dating|Adult dating аmеriсan|Adult blаск amеriсan|freе dating арp|Adult #1 free|Аdult zoоsк/i #100
+/Auto Маss Моneу Maker/i #10
+/Earn $?[0-9]+ per/i #100
+/$?[0-9]+ for [0-9]+ mins/i #10
+/200 for 10 mins/i #10
+/Business Loans/i #10
+/cardsdumps.com/i #10
+/301 Moved Permanently/i #10
+/free advertising for your website/i #10
+
+/[aeiou]{5,}/i #10
+/currency-trading-brokers/i #10
+
+
+/https:..cutt.us/i #10
+/all come with the original email, means they're as good as your own/i #10
+/MAJOR bulk discounts when ordering/i #10
+/Where you can contact me,PM me here|sellaccs.net/i #10
+/Paypal fees will be paid by the buyer No refunds allowed/i #10
+/Payments Accepted: BTC,ETH,ETC,LTC/i #10
+/I will gladly replace within the first hour of purchase/i #10
+/PDF converter software|transform PDF documents to editable documents|fabpdf.com/i #10
+/I am looking for a guy for a relationship/i #10
+/I could be blocked for posting/i #10
+/webmasters.bloggers.business owners|We are looking for people like you to test our website/i #10
+/They spend .* dollars each year collecting data/i #10
+/pharmacokinetic|chloroquine/i #10
+/Generic are the identical clones|clones of branded medications|difference in the two being the patent and the price at which it is sold/i #10
+
+/Hey.My name is Kristina. I am looking/i #10
+/Register PT PlayTech Gaming/i #10
+/match their counterparts in all aspects/i #10
+
+/Hi, I thought you may be interested in our/i #5
+/Your Video Marketing Cloud/i #10
+/Seхy girls for the night/i #10
+/No cost promotion for your website here/i #10
+/3dgame3d/i #10
+/Olav Gullvags Veg|Rue Charles Corbeau|Via Giacinto Gigante|Rua Maria Celma Medina/i #10
+/Country targeted website traffic quotes/i #10
+/Global Market Estimates Research/i #10
+
+/because videos are proven to/i #10
+/No more video marketing/i #10
+/you guys must be doing really well/i #10
+/No Charge web traffic/i #10
+/Maynard Ave, Manchester, NH|A-Z Design and Build|echtgeld ohne einzahlung casino|Gouin De Beauchesne|Rua Lagoa Cabralina/i #10
+/top100casino|fake gps new/i #10
+/I thought you may be interested in our services/i #10
+
+/com.opensymphony.xwork2|HttpServletResponse|CTXSYS.DRITHSX/i #50
+/chr\(95\)|char\(95\)/i #50
+/chr\(109\)|char\(109\)/i #50
+/execSync|child_process/i #50
+/netsparker.example.com/i #50
+/netsparker|N3tSp4rK3R/i #50
+/extractvalue/i #50
+/rand\(\)/i #50
+/select 1 and/i #50
+/select 1 union/i #50
+/localtime\(\)/i #50
+/0xFFF9999/i #50
+/0x5f21403264696c6/i #50
+/response\.write/i #50
+/268409241/i #50
+/gethostbyname/i #50
+/trace\.axd/i #50
+/passwd\.php/i #50
+
+/sell your HVAC business|specifically looking for HVAC companies/i #50
+/LeggingsHut|leggings hut/i #50
+/submit your ad on thousands of advertising sites/i #20
+
+/cool Dating site/i #30
+/Shalom, David here|Your website and business look great/i #20
+/1 Minute Weight Loss/i #20
+/We supply medical products/i #20
+/do not wish to receive email from us again/i #20
+
+/very impressed -- great site/i #20
+/feedback page on your site sends you these messages via email/i #20
+/Stop paying tons of cash for expensive Facebook advertising/i #20
+/What would you say to zero cost advertising for your website/i #20
+/converting it into videos to promote on Youtube/i #20
+/Get Unlimited website traffic/i #20
+/dofollow link from Amazon/i #20
+/Are you getting enough customers/i #20
+/Link Building Partnering/i #20
+/video content for businesses like yours/i #20
+/1984 by George Orwell/i #20
+/Brave New World by Aldous Huxley/i #20
+/Getting started with Keto Meals/i #20
+
+/Medical masks 3M/i #20
+/Avoiding judgment errors/i #20
+/If you do not wish to receive email from us again/i #20
+/Protective masks Eye mask Protective cap/i #20
+/Do you accept credit cards over the phone.electronically as a form of payment/i #20
+/Wanna promote your business/i #20
+/marketingvideocompany.com/i #20
+
+/Blockchain system/i #20
+/credits up to [0-9]+ bitcoin/i #20
+/address of the Bitcoin wallet/i #20
+/I wish to acquire some services from you|information from a responsible sales person/i #20
+
+/introduce to you our explainer video service/i #20
+/such as your product or service|and can be embedded into your website/i #20
+/zdhmarketing/i #20
+/explainer video service|business growth via online marketing|free basic marketing bundles|We have waived all setup fees/i #20
+
+/poker online|Pastinya anda sangat penasaran bukan|cermin99.biz|Hal ini disebabkan adanya pelayanan yang|merupakan salah satu dari permainan tersebut/i #20
+/noopener noreferrer/i #20
+/We can prepare container loads and ship via AIR or SEA/i #20
+/the product you need , the quantity needed, and the best contact phone number/i #20
+/Minimum order size varies by product/i #20
+/All products are produced in China/i #20
+/3ply Disposable Masks/i #20
+/KN95 masks and N95 masks with FDA/i #20
+/with low minimum order requirements/i #20
+/Please reply back with the product you need/i #20
+/-Gloves, Gowns -Sanitizing Wipes, Hand Sanitizer/i #20
+/driving your business growth via online marketing/i #20
+/Solo Ad Starts Same Day Purchased|Guaranteed SoloAd Mailer/i #20
+/take a moment to watch our presentation video/i #20
+/Today every person on Earth has been affected by the/i #20
+/Have you remembered to activate voice search for your business/i #20
+/loveawake.ru/i #20
+/business growth via online marketing/i #20
+
+/Fitness leggings and athletic wear for women/i #20
+/If you are an HVAC company, we can sell your business/i #20
+/If this is something you would like to discuss further, don't hesitate/i #20
+/Your support is needed to reduce the destructive impact the lock-down brings/i #20
+/to say Hi, ask to see my portfolio, or visit my site/i #20
+/All this, if not stopped shortly, can lead to chaos and unrests/i #20
+/simply delete this message and we won't contact you again/i #20
+/data from thousands of SEO campaigns/i #20
+/To explain what DA is and the benefit for your website/i #20
+/Buy N95 Face Mask and Medical Face Mask to protect your loved/i #20
+/Should I send over some sample videos created for other law offices/i #20
+/your personal bitcoin wallet/i #20
+/I have a ton of web traffic/i #20
+/lending@epsglobal-llc.com/i #20
+/Thermal condition of different locations/i #20
+/Acheter des consoles de jeux/i #20
+/Please share these links/i #20
+/Fitness leggings and athletic wear/i #20
+/Intuitive, efficient and convenient, making users directly/i #20
+/largest suppliers of social media marketing services/i #20
+/jackpotnya/i #20
+/Thanks for the post/i #5
+/Mark Millan With TeQball/i #20
+/Hello, We have available the/i #20
+/you Dave Willis Product Specialist/i #20
+/Need to take your business digital/i #20
+
+/The Norwegian LAMININE/i #20
+/Secret way to advertise your website for Nothing/i #20
+/Hey, Need more money/i #20
+/Here is your quotation regarding the Articles/i #20
+/web2 posting project/i #20
+/My sexy photo here/i #20
+/Advertise your site FREE/i #20
+/Best Gay tube|gay0day/i #20
+/DEFENCE ROAD ,NEAR THANA SADAR/i #20
+/SC New Media Services/i #20
+
+/quotation regarding the Articles web2/i #20
+/arteseo.co/i #20
+/Secret way to advertise your website/i #20
+/sildenafil 20 mg vs levitra|now-levitra-online/i #20
+/bit.ly|tiny.cc|tinyurl/i #2
+/Free web traffic here/i #20
+/My sexy photo here/i #20
+/Center For Alcohol And Drug Treatment/i #20
+/Advertise your site FREE here/i #20
+/doxycycline/i #20
+/Astonishing course of expression. Look after it up/i #20
+/nudestripper|submityourfreeads|healthevolutionproject/i #20
+
+/staff member that oversees your website/i #20
+/Million per day industry and is expected|Get in early before it is oversaturated|never before seen training from Tony and Dean/i #20
+/1Md6imvB2neTF3s1kFiMG473k1XrBhxQhF|Bitcoin address/i #20
+/online pharmacy|delivering medications throughout the world|managed distributor of generic drugs/i #20
+/business does not have a very strong LinkedIn presence|number one business social network/i #20
+/Drivetheleads|JustEmailMarketing|virtually guarantee new leads/i #20
+/investor who invest in server infrastructure|million email database|investor for my email marketing business|infrastructure to send like|increase every week by add more servers/i #20
+/proprietary system that creates profits between cryptocurrency|assets grow with automated transactions|offline from a Bitcoin-ATM/i #20
+/prancegoldholdings/i #20
+/ALLOWED TO MAKE IMPORTANT DECISIONS/i #20
+/After finding the vulnerability we were|found a vulnerability within your site|get your database credentials|associates with whatever angry customers/i #20
+/The Last Days are here|Doesn’t that sound Tribulational/i #20
+/mailermasters|1000-likes|accs.vn|mytrafficnemesis|taikhoan|ghostdigital|spravka|uberwin|google-maps-citations|adpostingrobot|nornout.ru|clickfrm/i #20
+/only those who register get access to/i #20
+/desire to skip this sort of marketing/i #20
+/download cheap|cheap software|software...cheap|software store|online oem buy|buy oem software online|oem buy cheap|adobe free download/i #10
+/Sent from my iPhone/i #10
+/important components of your marketing/i #20
+/Awesome mo = 'modus operandi|Look after it up!/i #20
+/opportunity to win the best prizes/i #20
+/Free keyword research|rank on google in days/i #20
+/Anna I'd like to meet you|like to meet you neighbour/i #20
+/If you are ready for it - Anna|if you are into it - Anna/i #20
+/Get a seat on this live webinar today/i #20
+/submitted this message via your contact form|your site sends you messages like this to your email account/i #20
+/Deadly secret the United States government is hiding/i #20
+/We will give you all information about how to download the/i #20
+/brokers linked with high profile investors from/i #20
+/I'm Prince Taylor/i #20
+/My son born January 5th 2020 requires a serious head surgery|due to the fusion of the cranial suture|gathering the funds through a verified charity/i #20
+/advertising that charges less than/i #20
+
+/Hello, My Name is Ash/i #20
+/Hi, Do you have a Website/i #20
+/Hope you are safe in this pandemic/i #20
+
+/pineapple staffing/i #20
+/Stop paying 1000's of dollars for|ripoff online ads|I can show you a method that requires only a small payment/i #10
+/hydra2web/i #10
+/Good day Wear with intent, live with purpose|Fairly priced sunglasses|with high quality UV400 lenses protection/i #20
+
+/Greetings, I was just checking out your site|and filled out your "contact us" form|page on your site sends you these messages to your email account|which is why you're reading my message right now|making people actually READ your advertisement/i #20
+/This message is to alert you that the|Free 1-Year subscription of the SSL certificate|on your website is no longer valid|This means that hackers can now snoop|Online viruses, bad actors|steal your sensitive personal information|an invalid or expired SSL also infringes GDPR/i #20
+/hunting for a improved hyperlink indexer/assistance is the most straightforward for Google still|Our formulation are all limitless, submissions AND selection/i #20
+/how would you like to promote your website for literally no cost|have a higher Domain Authority score|service you get Domain Authority above/i #20
+/Hi, Do you have a Website|Of course you do because I am looking at your website/i #20
+
+/Magic Submitter Spins And Submits Your Articles|press releases to over 500|of accounts for you automatically verify/i #20
+/hard to get backlinks|websites which have Domain Authority above/i #20
+/Could you handle more customers/i #20
+/zoomsoft.net|paymenthub.online/i #20
+/and tools that work in 2020 that the Google algorithm loves|SEO friendly content/i #20
+/Our unique equipment has no analogues in the world/i #20
+/Worldwide Shipping Shop Now|neckflexer.online/i #20
+/Air, Classic, Pro Phones All Phone Repair|Nintendo Switch Laptops All Laptop Repair|All MacBook Repair|techknowspace.com/i #20
+/Facebook Spotify Starbucks Staples/i #20
+/And WITHOUT hiring expensive coders/i #20
+/automate Live Chat so it’s HUMAN-FREE/i #20
+/Affiliate Review Sites|List-Building Pages/i #20
+/Of course you do because I am looking at/i #20
+/fast growing and profitable business/i #20
+/monkeydigital.co/i #20
+/No need to reply to the email i provided above as its not registered/i #20
+/It goes much deeper than this but the purpose of this doc/i #20
+/B2B Companies Database/i #20
+/infringed and I am trying to protect my intellectual property|you may be pretty damn sure I am going to report and sue you/i #20
+/Alison Positive Marketing/i #20
+/targeted visitors per month|more visitors on your website|Targeted Visitor Specialist|targeted visitors to their websites/i #20
+/click above for information about starting a free trial/i #20
+/Dalibor Harald|work with you on a more transparent approach|Joint Ventures Partnership and lending/i #20
+/share some useful information and websites/i #20
+/Has your business lost customers due to COVID-19/i #20
+/This Google doc exposes how this scamdemic is part of/i #20
+/alemprint.ru|bolnichniylist.com|jfgdjfhjdgfhehdugfegge.com|whatsappbot.hustbee.icu/i #20
+/Nvbdfjgvdsi|hifhdifjsdifh|iifhdsufhsduhg|fhdsifjsidfh|jifdfidhsfhdughu/i #20
+/thanks interesting fiction/i #20
+/NYPrep Capital Property Advisor, USA distributor/i #20
+/Mister misery 1901/i #20
+
+/11918 SE Division Street Unit|2398 Commercial Way, Suite 144|1178 Broadway 3rd Floor Office|The Dioz Group of Companies/i #20
+
+/Personalized Dog Harness|caredogbest.online/i #20
+/not interested, no worries, best of luck on your site/i #20
+/The huge income without investments is available./i #20
+/completely-free-ads|seo-swat.ru/i #20
+/Almamea - Your Healthy Corner/i #20
+/Guiltyhypocrites Tumblr Health/i #20
+
+
+
+
+
+/intellectual people and help them during this time.*A limited time loan offers waiting for you/i #20
+/licks from organic traffic.*However, your competition is crushing it You can view detailed traffic analysi/i #20
+/Its perfect time to plan your marketing strategy.*You have created good website/i #20
+/Unlimited Flat-Fee Processing for only/i #20 
+/per month. We make it easy. And UNLIMITED. Process/i #20
+/I can get you .* highly targeted visitors directly to your website/i #20
+/Bill Gates.*Americans Must Use This/i #20
+/I Never Leave Home Without Taking It First/i #10
+/where the country is headed and so he has poured money into a treatment that has/i #20
+/own a videography studio here in China that produces high quality video/i #20
+/dclks\.com/i #20
+/know the value of this extremely fast turnaround time in the E-com world/i #20
+/card fees costing you more than .* of your monthly profits/i #20
+/Workout Niche/i #5
+/to find important information about your audience|I will show you how to optimize/i #20
+/you like my proposal then please let me know a good time and phone number to/i #20
+/bloggers, authors, advertisers, publishers, social media influencers, backlinks managers, Vloggers/i #20
+/Hello, we are The Online Publishers/i #20
+/We are focusing on tanks not manfactured by any companies/i #20
+/Dating for everyone.*Just do it/i #20
+/brain you must use this.*See what the Sharks say/i #20
+/mail\.ru/i #20
+
+/SendBulkMails|Million emails/i #20
+/Dynamic Enterprise AG|get new clients in less stressful yet highly profitable/i #20
+/organic website traffic/i #20
+/thought I would message you on your contact form and offer some help/i #20
+/limited time loan offers waiting for you in the link/i #20
+/websites provides a low cost and effective online marketing solutions/i #20
+/Download and install now to be building databases/i #20
+/Get-More-Leads-Now.com/i #20
+/TOP Vlogger Experts How would you like to have your/i #20
+/What better way to do that than with a series/i #5
+/it is in the form of videos instead of written text/i #20
+/NON-COMPLETION of your submission by the given expiration date/i #20
+/Due to the difficult situation the whole world facing right now/i #20
+/Looking forward for income.*Get it online/i #20
+/ask our support team all about it/i #20
+/would you like more business leads at a lower/i #20
+/ifjifjwsidjwodkwsfjie/i #20
+/theonlinepublishers/i #20
+/plbtc.page.link/i #20
+/New search engine/i #10
+/Please call me back, i would like to hear more details/i #5
+
+/This is what inspired me to book Africa/i #10
+/This robot can bring you money|Earn additional money without efforts/i #20
+/Financial robot guarantees everyone stability and income/i #20
+/Meet new movies/i #5
+/mo Flat Fee.*Credit Card Processing/i #20
+/chat bot for whatsapp/i #20
+/howmy|.com\.tw|datanumen\.com|ygcoxncdz\.cf|wqnsvxek\.gq|szhrnfwm\.gq|vlrekrtdgf\.tk/i #20
+
+/Hi, We're wondering if you'd be interested in/ #9
+
+/Our website is dedicated to facts.education/i #20
+/and so can host articles on pretty much any topic/i #20
+/If you wish to write the article yourself/i #20
+/can pay once the article has been published/i #20
+/You can look past all the information if you want/i #20
+/l.linklyhq.com/i #20
+/all your logins and passwords from all accounts/i #20
+/access without a login and password to any of your accounts/i #20
+/text, photo, video and audio files/i #20
+/and you can sleep peacefully without worrying that all information about/i #20
+/Bitcoin wallet to which you want to transfer/i #20
+/1MaRdde6X7SGuoCdFNL2fmgpLomdx7peGC/i #20
+
+/Email us back with a name and phone number where/i #10
+/HELP YOUR COMPANY WIN IN OUR NEW COVID-19 ECONOMY/i #20
+/tonydeoleo.com|Download your E-book Copy Now/i #20
+/I want to provide you some very important information|committee member within the Liberal Party of Canada/i #20
+/transitioned into the universal basic income program|thecanadianreport.ca/i #20
+/You're legally able to demand this new option/i #20
+/We represent merchants challenging their credit card processors/i #20
+/noticed that you are not running Google Remarketing on your website/i #20
+/They were on your site once and may only need a reminder of your services/i #20
+/Can I help you grab these low hanging fruits/i #20
+/During Covid, like most business owners you just want to survive through/i #20
+/Ever wanted to push some competition site/i #20
+/PASSIVES EINKOMMEN/i #20
+/Hello! You've been hacked/i #20
+/blackhat.to/i #20
+/Assured SEO & Digital Marketing/i #20
+/United States Minor Outlying Islands/i #5
+
+/into it . Anna|ready for it . Anna|you are ready for it - Anna|you are into it - Anna/i #20
+/LPC Strategic Committee LeakInboxLPC leaker/i #20
+/theremarketingguys/i #20
+/Buy all styles of Oakley Sunglasses/i #20
+/BrainPlus - Ignite Your Brain/i #20
+/Please call me back, i would like to hear more details/i #8
+/Small Business Credit Card Processing/i #20
+/d.radikal.ru/i #20
+/Want more visitors for your website/i #20
+/410 E Santa Clara Street Unit #814/i #20
+/11 East 30th St - Suite PH1/i #20
+/mohalah islamabad sialkot/i #10
+/galusa777.com|fupt.com|918indo.com|otpito.ru|promohab.ru|chip-tun55.ru|alanyaescortbayan.xyz|esysts.ru|vbrat.ru|moneylinks.page.link|clonevia.com/i #20
+/online buy software cheap|cheap soft download|software . cheap/i #20
+/Want more visitors for/i #20
+/googlegooglegooglegooglegoogle|google\.ru/i #20
+
+/ONLINE VERDIENEN VOR|ONLINE VERDIENEN VON|EINNAHMEN IM INTERNET/i #20
+/ping -n/ #20
+
+/Keep everyone safe during the pandemic in the office Sanitize/i #20
+/This notification RUNS OUT ON/i #20
+/Our website scanner has established that your website/i #20
+/at home Covid-19 Rapid Antibody Test Kits/i #20
+/Why Did You Create This Website/i #20
+
+/RatingsKing/i #20
+/Competition not playing the game fair and square/i #20
+/We are currently helping business owners get more sales by|redesigning their website with the new google algorithm at affordable price|Reply to this email to know more Contact|timothystark62@gmail.com/i #20
+/How would you like to make money by simply driving/i #20
+/increase your website search engine/i #10
+/private blog network/i #20
+/SEO related advice/i #20
+/well my question is what is the difference between your store/i #20
+/that we can send you more details like cost and timeline both/i #20
+/Invite Bloggers and Webmasters/i #20
+/Unusual login details/i #20
+/Why Did You Create This Website/i #20
+
+/Want more sales leads traffic/i #20
+/apologies for sending this email by|The money involved is very huge/i #20
+/looking to promote your website for literally no cost/i #20
+/There has never been a better time to take care of your neck pain/i #20
+
+/freelance creative web developer/i #20
+/interested in improving the backlink/i #20
+/making websites since 2005/i #20
+
+/Your reputation and business are at stake/i #20
+/emails of messages to veterans with threats and insults/i #20
+/we will begin to destroy your business and you along with it/i #20
+/This announcement ENDS ON/i #8
+/For info as well as to make a optional settlement for domain service/i #20
+/Get the things you deserve with clean credit/i #20
+/smith.trenton.w.gmail.com/i #20
+
+/manuscript|parchment|papyrus|ancient times|ancient russia|middle ages|15th century/i #5
+/Julia's Garland|Guirlande de Julie|Duke de Montosier/i #10
+
+/jiyoungcho39@yahoo.com|jw.exhibits@gmail.com|dacrist@cox.net|wassaicfoodmart3997@gmail.com|rveloz@elpasoheater.com|cliftonwade600@gmail.com|ctmedlin1981@gmail.com|carlwhotz@gmail.com|olsensdistributing@att.net|grhodes@globalsurgical.com|olsensdistributing@att.net|jginvta@gmail.com|rosalie777@gmail.com|cathy.fraze@gmail.com|camerontapley@verizon.net|wheelfun@msn.com|mfarah@gardenstateloans.com|eren@picassotravel.com|durban3@austin.rr.com|paulsontours@aol.com|eollysoap@aol.com|cathy.fraze@gmail.com|guitargeek69@gmail.com|clark@huttonpharm.com/i #20
+/From many manuscripts of Antiquity|and 12 thousand Georgian manuscripts|manuscripts attributed to Robins|One of the most skilled calligraphers|Of his works, he is especially famous|Since the era of Charlemagne|European glory, and even after/i #20
+
+/YOUR IMMEDIATE ATTENTION TO THIS MESSAGE IS ABSOLUTELY NECESSARY|TERMINATION of your domain/i #20
+/super soft towel made for your pet|text and illustrations to which/i #20
+/hope you liked the joke in the subject|protect your web site from unwanted messages|shielded from unwanted messages/i #20 
+/slnk.info/i #20
+/business to the top of the search engines|YES, send me the report|blogger outreach supplier/i #20
+/Build Your Online Influence/i #10
+
+/reaching out businesses who need more customers right|increase the visitors to your business/i #20
+/Best wishes, Shelby Your Marketing Plan/i #20
+/Not Just Visitors, but real humans that spend time/i #20
+/Unique Visitors a day generating between|affordable packages to test out our services High quality/i #20
+/If you would like to talk personlly or have any questions please stop/i #20
+/I know things are crazy right now, but do you need more/i #20
+/great site. Are you guys still open? I'm reaching out businesses/i #20
+
+/geothermalresourcescouncil.org/i #20
+/was performed to send the receipt/i #20
+/send the receipt - see the document/i #20
+/Hey, great site. Are you guys still/i #20
+/Premium Office apps, extra cloud storage/i #20
+/the best poets of his era and|which is carried out by the printing|written on the parchment was scratched|then only a few have reached/i #20
+/if you are into it - Anna|If you like it - Anna|are ready for it - Anna/i #20
+/medical disposable face mask to protect your loved ones from the deadly/i #20
+/By the end of the 15th century/i #20
+/book about the chess of love/i #20
+/Manuscript is a collective name for texts/i #20
+/As a rule, the manuscript is called/i #20
+
+
+/method of retail where the store owner never physically holds/i #20
+/How much money does your business website brings/i #20
+/want to contribute a guest post/i #20
+/tired of your leads being sold to your competitors/i #20
+/definitely your business also has a website/i #20
+/own a website that you would also want to monetize/i #20
+/aimarketingpros/i #20
+/585-437-3988/i #20
+/Please permit me to quickly introduce to you what will benefit/i #20
+/from lat\. manus.*hand.*scribo/i #20
+
+/you are ready for it - Anna/i #20
+/if you are into it - Anna/i #20
+/Hello! Please permit me to quickly introduce/i #20
+/Since manuscripts are subject to deterioration|In the XIII-XV centuries in|At the same time, many antique|books in ancient times was papyrus|and was erased, and on cleaned|A handwritten book is a book/i #20
+/reproduced by hand, in contrast|manuscripts underwent in the Middle|Middle Ages as in Western|for Countess Louise of Savoy/i #20
+/mohalah islamabad sialkot/i #20
+/Speed SEO Digital|speed-seo/i #20
+
+/coronavirus-world-map.net|tvoya-strana.ru/i #20
+/alexigorevich chagnoff/i #20
+/Best SEO provider/i #20
+/AlexaSpeed Team/i #20
+/NETSKIEL.COM/i #20
+/vaping use by minors thesis statement/i #20
+/Dropshipping business is a method of/i #20
+/Libraries of the Carolingian era|Century to a kind of destruction/i #20
+/vk.cc/ #20
+
+/looking for new ways to generate traffic/ #20
+/MORE IMPRESSIONS from your customers/i #20
+/promote your website for absolutely no charge/i #10
+/more people to visit your website/i #10
+/DOMAIN SERVICES EXPIRATION NOTICE/i #20
+/We offer you our advertising services/i #20
+
+
+/drafts of literary works|elements .case, binding|thousand Greek, 30 thousand Armenian/i #20
+/the spread of parchment|reproduced by hand, in contrast|handwritten by the author|from a printed book, reproduction/i #20
+/collection of poems composed|Preserved about 300 thousand|The most common form|commonly associated with/i #20
+/handwritten books were made/i #20
+
+/inventions of typography/i #8
+/New Year's time for gifts|Play now and win/i #20
+/ancient and medieval Latin/i #20
+/Get more Followers, Likes, Views/i #20
+/marketingchoice.com|buy-instagram-followers|MarketingChoice/i #20
+/System4 Facility Services of Central Colorado/i #5
+/Make your phone ring from Chinese buyers today/i #20
+/Guirlande de Julie/i #20
+/Wilson Henrique - SEO Analyst/i #20
+/consists of the book itself/i #20
+/Viagra costs Buy Viagra Online/i #20
+/These are the Egyptian papyri/i #20
+/XVII century was Nicholas Jarry/i #20
+/A cycle of 15 mailings during the mont/i #20
+/Many calligraphers have acquired/i #20
+/multiplies .see also article/i #20
+/text carrier and protective/i #20
+/only a few survived/i #20
+/among them acquired "Moral/i #20
+/secular brotherhoods of scribes/i #20
+/term manuscript .late lat.manuscriptum,/i #20
+/new texts were rewritten/i #20
+/monuments related to deep/i #20
+/number of surviving European/i #20
+/or their samples written/i #20
+/Western Europe also formed/i #20
+/Europe, and in Ancient Russia/i #20
+/Como puedo iniciar sesion/i #20
+/scroll. Go to Code Form/i #20
+/manuscripts significantly/i #20
+/works of art\./i #20
+/so expensive material/i #20
+/1 213 425 1453|1 213 457 3759|89031234567|88224235334/i #20
+
+/Online job can be really effective if you use this/i #20
+/Say Hello to these matches|These people have been checking your profile/i #20
+/Check out the new financial tool|which can make you rich/i #20
+/You have New Mail in your Mailbox|Please visit our site to read it|you need to sign in and go to your MAILBOX/i #20
+/Trust the financial Bot to become rich/i #20
+/We did a little digging for you|found some new people we think you'll be interested in/i #20
+/Check them out now/i #5
+/Make yourself rich|financial robot/i #20
+/I am looking for a sex body/i #20
+/Start making thousands of dollars every week/i #20
+/Small investments can bring tons of dollars fast/i #20
+/This Robot is a great start for an online career|The success formula is found|Let your money grow into the capital with this Robot/i #20
+/with this robot/i #5
+/considered taking the content from|promote on social media/i #20
+
+/bride, Julie d'Angenne|way. Handwritten book|manuscripts held onto|inventions of typography|Testaru. Best known|mostly in monasteries|Duke de Montosier|handwritten synonym/i #20
+/Make dollars staying at home|and launched this Bot/i #20
+/Everyone can earn as much as he wants now/i #20
+/Check out the newest way to make a fantastic profit/i #20
+/No need to work anymore while you have the Robot launched|after you lunch this Robot|after you launch this Robot/i #20
+/Let Robot make money for you|Check out the new Robot/i #20
+/Trust your dollar to the Robot|Robot and see how it grows|Rich people are rich because they use this robot|One dollar is nothing/i #20
+/Looking for additional money|Try out the best financial instrument/i #20
+/need cash/i #8
+/Launch this robot|Your money work even when you sleep/i #20
+/online investment tool/i #20
+/One click of the robot|bring you thousands of bucks/i #20
+/Enemies not playing the game fair and square|bns-group.org/i #20
+
+/regarding your Business Reviews|Google reviews improve/i #20
+
+/Do you want to know what kind of events in your life you|Astrological Studio/i #20
+
+/and What kind of credit card do you accept as payment/i #5
+/sending you my intimate photos/i #20
+
+/Amazon Alexa and Siri|find your company using Voice Search/i #20
+/sounds like a lifeless Robot|hear a free demo now|Text To Speech In 3 Clicks|Real sounding human voices/i #20
+/It looks like you've misspelled the word|Silly mistakes can ruin your sites credibility|spellscan.com/i #20
+/No charge advertising for your website/i #20
+/and that the company is good|and that clients are good|and that clients are profitable|submit your website to 1000s of directories/i #20
+/person in charge of lead generation|lead generation website chatbot/i #20
+/Sending out emails is fun/i #20
+/REALLY possible FOR EVEN YOU to generate/i #20
+/days would be an exceptional result that would require work/i #20
+/usualprospect.com/i #20
+/very few companies that can build verified Google My Business/i #20
+/These listings get over 200 visitors to our site a week/i #20
+/chat about growing your company/i #20
+/ROImedia.org/i #20
+/details of how you can get more replies/ #20
+/sharpening an axe before chopping a tree quote/i #20
+/how to FIX your online business in under 5 minutes/i #20
+/Online casino 2021/i #20
+/90 312 410 40 40/i #20
+
+/my first comment here so I just wanted to give/i #20
+/online vape shop/i #20
+/Lacking behind in Google Ranking|We also provide web design services /i #20
+/We are purely SEO Company|place your website on top of the Natural Listings|you have any SEO needs/i #20
+/The New Normal 2021 Documentary/i #20
+/refer me to the person in charge of website optimization|website optimization as well as a performance audit/i #20
+/the-test\.de/i #20
+/great website which provide account for SEO/i #20
+
+/audiovenik.info/i #10
+/Al Azimah for Technology/i #10
+/16453 S Forsythe Rd .3/i #20
+/34 13th Ave NE B001/i #20
+/44 844 995 1012/i #20
+/ProClaim Roofing and Home Repair/i #10
+
+/pcs medical surgical masks only|Special Offer for the next 48 Hours ONLY/i #20
+/jameslambert@lambert-james.com|Million so if interested, kindly contact me through this email/i #20
+/seeking a reputable company.individual/i #20
+/audiovenik.info/i #20
+/Promote your site free here|www.zerocost-ad-posting.xyz/i #20
+/You Won.?t Want To Miss This/i #20
+/Good day I`m/i #2
+
+/Seeking webmasters who use cdn to speed up websites|bloggers like you to participate in our online|We are looking for webmasters|small business owner to participate in the online paid researches/i #20
+/perfectmedialab.com/i #20
+/Cash offer will Not Screen members/i #20
+
+/This E-mail lottery|Your E-mail address has won With winning lucky number/i #20
+/34 672 520 003|34 672 520 000/i #20
+/Awardnotificatios1721/i #20
+/Please check our car store|benedict-auto.com/i #20
+
+/Join the board here|www.uptheclarets.com/i #20
+/LA PRIMITIVA LOTTERY AWARD/i #20
+/Please forward to Jimmy/i #5
+/Interca Foreign Trade Copmany/i #10
+/skladchik.com/i #20
+/011 40 0730765553/i #20
+/ads-that-stay-up-forever/i #20
+/Link Builders Team/i #20
+/Seeking webmaster.small business/i #20
+/mes285556ngkyt|mks226876uttjr|mns2185186utr SKJ1bCF Z8uO msnbxT/i #20
+/61 431 364 999/i #20
+
+
+/working with SaaS startups to increase the number of prospects|help make outbound outreach simple and straightforward/i #20
+/don't like cold emails|three websites will face a hacker attack|actually deliver my service satisfactorily|crockswebrepairs@outlook.com|Crocks Web Repairs/i #20
+/tried to find you on google maps|Have you heard about Local SEO/i #20
+/Could your business use some Working Capital/i #20
+/Our loans are based on your companies revenue/i #20
+/expert SEO consultant|research and on-page optimization|free facebook marketing/i #20
+/Investors wishes to invest in your company|Business Project Presentation Plan Asap/i #20
+/domainregistercorp/i #20
+/FixHackedSites.com/i #20
+/Enough of being a loser/i #20
+
+/30025 Alicia Pkwy FL 20-75/i #20
+/Good evening people at/i #15
+/fix hacked site/i #20
+/Did you know/i #3
+/vape stores/i #8
+/Where can I subscribe/i #8
+/abc abc abc abc/i #10
+/clients this year/i #5
+
+
+/cheap essay writing service/i #20
+/Jeffers sonsweers.*apple.com/i  #20
+/mys1990721ngkyt|GGHvrKY|ffHKwty|mis787638utr|VlQWJZ6|7mzUzSQ|mys883687ngkyt|hevhgvU|V7irwQ4|mns714807ngkyt|0iPUzai|hz4ouUT|mps437358errtbh|VaerHIc|2VfhAiR|mes5898035utr|xscWnLJ|lMpRaZg|mks3517696errtbh|hDpAqZY|vG3bIOu/i #20
+/Based Busines Traffic Network/i #20
+
+
+/want to make .* faster and cleaner/i #20
+/is in charge of copy writing and content creation|video sales letters and persuasive website content|mysaleswriter.com/i #20
+/interested in a completely FREE fill in the blanks professional sales letter template/i #20
+/Sales Boosting Upsell Scripts/i #10
+/Wordpress.Woocommerce|maybe do you intend to implement it at some point|5000 premium plugins|2500 premium plugins|shorteo.xyz|shortsf.buzz/i #20
+/correlation between social websites activity|activity and rankings|The more content is shared, liked, commented on|the larger its quality, value, relevance|social-signals.site/i #20
+
+/perks of using our product for neck pain|Just one day of labour is more than enough to do hurt to your neck pain|irritation and posture problems|studying, working out at the gym, or simply browsing through your social media|It is currently sold at a 50% discounted price even at its affordable price/i #20
+
+
+
+/need for CATERING SERVICES|free FOOD SERVICES|baesidegrill|416-670-1862/i #20
+/The urban life gives people a huge number of conveniences and comforts|imposing certain unpleasant restrictions|picnics and cookouts in the out-of-door|homedesignideas.us/i #20
+
+/100% high-quality work|Only the best software|download all the needed software|viruses, and hidden payments|All software is FREE only today|down10.software/i #20
+
+/Are you looking for money|further grow and expand your business|power of a direct lender to work|loans up to 500k|without requiring good credit or collateral|Instant Approval in less than 30 seconds|moneystorelendings.xyz/i #20
+
+/Get your own Covid-19 test results|Buy-Rapid-Tests.com|FDA Authorized Covid-19 Rapid Test Kits|These tests are perfect for your organization, business, restuarant or group/i #20
+/Do you always seat with your computer working for a long time|Or you see yourself in a position where you always focus|like computer screens or Television|you must have had experiences with neck pain|Smart Electric Neck Massager|neckbc\.com/i #20
+
+/I’d like to write a guide for you to publish on your website|It’s a quick-start introduction to|ECOpreneurship|how to start a business that saves the planet|perfect starting point for nature lovers who are business-minded|info@teacherspark.org/i #20
+
+
+/Do you need more clients|We have amazing databases starting at|StarDataGroup.com/i #20
+/I really love all the great effort you put into|I promised one of my mentors that I pass this secret along|I have something very special that only you can know it|fastwebvisitors.xyz/i #20
+/My name is Eder Holguin, Digital Transformation expert and author of Dreaming of Hope Street|I help companies increase sales, generate leads and increase market share by leveraging digital marketing|Lead Gen campaigns to build custom databases|Free Trials or app downloads|Subscription programs that increase recurring revenue|ederholguin|dreamingofhopestreet.com/i #20
+/responsible for lead generation and marketing|completely free no strings attached fill in the blanks professional sales letter template|MySalesWriter.com|unsubscribe.onlineserver/i #20
+/Looking for more serious customers|provide keyword targeted people specifically|buy-visitors-4yoursite.xyz/i #20
+/Funding any company in any kind of project|with only 4% interest for 10 Years|44 7537 166152|Mmzzx101@gmail.com/i #20
+/Animatic Animation Studio|logo animations that are great for social networks|Visit our website and see what we have done for our clients|animatelogo.com/i #20
+/Love your website, but we couldn't find you on Instagram|other businesses are getting 150-500 new followers per week|fantasticmarketingplan.link|964 East Badillo Street St. Unit2055 Covina, CA 91724|not to receive commercial messages regarding/i #20
+/Grow your business with|LocalArea.com|Start Free Today|Promote custom coupons|Gain access to our proprietary coupon design software|professional coupons for your business|to manage your FREE listing/i #20
+/Check Out Our Coupons for This Month|Get Your Domain, Hosting and SSLs For Less/i #20
+/I have to say that I am very impressed with the quality|I have been tasked with identifying, initiating|developing a business partnership with you/i #20
+/hchoi382@gmail.com/i #20
+/NOT SATISFIED WITH YOUR HOSTING/i #20
+/longer wish to hear from us, please reply this email/i #20
+/System4 Facility Services of Central Colorado/i #20
+/link-world.xyz/i #20
+/2764 Pleasant RD Bld APMB 934/i #20
+/Appledew International House 12 Constance/i #20
+/30025 Alicia Pkwy FL 20-75/i #20
+/ProClaim Roofing and Home Repair/i #20
+/abc abc abc abc/ #20
+/mys1779850rtjuny|EEGRsvQ|vZY9gYY|mss821469ngkyt|JH8Jc1i|FTloPG6/i #20
+
+
+/reaching to offer a simple 3 step process/i #20
+/do-follow backlink/i #20
+/Scannable Fake ID|premium fake IDs|fake ID comes with Scannable features|topfakeid.com/i #20
+/offer the best marketing services on our website/i #20
+
+/have sex on the first date/i #20
+/America’s Injury Attorneys Lists|www.injury-attorney-lawyer.com/i #20
+
+/getmoreclientsfaster.com|performance-based-seo|mcmarketing360@hotmail|sesforyou.com/i #20
+/gulfconnectltd.com|ease-track.com/i #20
+/We provide funding through our venture capital company/i #20
+/let things like bad credit or short time in business keep/i #20
+/We are also currently structuring a convertible debt and loan/i #20
+/Best Dog Bed Of 2021/i #20
+/wholesale N95 Masks and Surgical Masks/i #20
+/like Facebook, but which plugs into its own real-time ordering|instantly creating an additional outlet for your business/i #20
+
+/Restaurateur, Influencer, Retailer, Realtor, Educator, Tech-developer/i #20
+/chitchatchannel.com/i #20
+/It has other corporate features like its own/i #20
+/Online Business Using Nothing But Ethical Email Marketing/i #20
+/we could help you 2X-5X your business/i #20
+/Most SEO companies will ask you to pay upfront/i #20
+/Pay Per Performance SEO/i #20
+/first page of Google/i #10
+/bold statement but we can back it up with 9 years of success/i #20
+/interested in featuring a guest post on your website|backlinkpro.club/i #20
+
+
+/best fake id maker/i #20
+/struggle to find time to write articles|well-written SEO content|best-seo-articles/i #20
+/millions of sales for direct marketing camapign|using weight loss products|mailbanger.com/i #20
+/Rate my naked body on a scale/i #20
+/getting your site to the top of the search engines|search engines for your keywords/i #20
+/make m0ney THIS EASY|withdraw your earning to your bank account|gonewscloud.blogspot.com/i #20
+
+/redesigning your website/i #20
+/interested in redesigning your website or making some upgrades/i #20
+/but I can do some pretty amazing things/i #20
+/specialize in one platform that's truly amazing called WordPress/i #20
+/all the work by myself freelance and I never outsource/i #20
+/BestLocalData.com/i #20
+/databases and unlimited emails for a year/i #20
+/Domain, IP, Dashboard included/i #20
+/Newer websites out there are now integrated with features/i #20
+/special package you get any group of databases/i #20
+/biturl.top/i #20
+/I am a web designer looking for/i #20
+/Newer websites out there/i #20
+/Happy New Year 2021!! www.google.com/i #20
+/health sector in nigeria|fmohconnect.gov/i #20
+/DOMAIN SERVICES NOTICE/i #20
+
+/Gabriel Angelo|Company can bridge fund for your new|let me know when you receive this message for further procedure/i #20
+/Times are bad and many are suffering|time off to explore Buddhism/i #20
+/UltimateSpiderBot/i #20
+/Times are bad and many are suffering/i #20
+/Your website is nicely done, when I was looking at your website|Repair, or Redesign or Build a New Website completely/i #20
+/Send unlimited emails to unlimited lists/i #20
+/warriorplus.com/i #20
+/stopping by to offer you our free guide titled|100 Backlinks in 30 Days|drastically increase your site’s authority|backlinks100.com/i #20
+/Our team will hand-craft a SEO strategy|optimizing content, building links, and taking care/i #20
+/easily bypass any sales page and generate a new buy|bypass with automatically create a custom payment|Use your favorite page-building software or simply/i #20
+/2021 City's Best Award|We work with one business in each major city throughout/i #20
+/What is Link Bypass/i #20
+/QGWE49FD6QOP2LPWXF/ #20
+
+
+/4283 Express Lane Suite 7216-285/ #20
+/30025 Alicia Pkwy FL 20-75/i #20
+/easy-flac.com/i #20
+
+/Perfect Money crack/i #20
+
+/Buy face mask to protect your loved ones from the deadly CoronaVirus/i #20
+/Want to learn the copy magic to fix it/i #20
+/but grew frustrated with lengthy pitch meetings which wouldn’t convert/i #20
+/consumerproductsintl.com/i #20
+/explainervideoguys.com|EmailDataPro.com|paymentofdividends.page.link|www.curtsy.jp|ph.forex-is.com/i #20
+/distribution reach within the United States or enter the world’s largest consumer market/i #20
+/interested in getting external help with graphic design/i #20
+/In the summer on the street you meet a lot of beautiful, slender, young females/i #20
+/Only on our website are 100% real private photos added by our users from all over/i #20
+/The concept of guidance has come to search engines in the form of/i #20
+/wondering if you’ve ever considered having a web-based tool to schedule and analyze/i #20
+/Bit.ly/ctc-offer/i #20
+/Meet Abe, Meet Mike, Meet Tim|We used to be commissioned salesmen.*but grew/i #20
+/Viarga | Viarga| Levirta|Levirta |Kamarga |Ciails | Ciails/i #10
+/best essay writing service/i #15
+
+/calmompcalny.ga|crypto.gravedanger.biz|bronexnacecenlpeacht.tk|mesvestklicipcugun.tk|232info.ru|mucksagesditore.ga|ychininvitex.tk/i #20
+
+/URGENT RE:/ #10
+/URGENT RE:.*(visit|review|see|click|Visit|Review|See|Click)/ #20
+
+/A wonderful collection of erotic photos of female charms/i #20
+/Hello, Do you want to increase your sales/i #20
+/targeted-visitors-4yoursite.xyz|ErnestLilliana57358@gmail.com/i #20
+/Erotic photos/i #20
+
+/message into the inbox of any type of business, without needing to know their email address/i #20
+/Would you like to compare pricing on your office cleaning service/i #20
+/happy to provide you with a no-obligation quote on your facilities cleaning/i #20
+/any of the sections of our site you will find seductive and sexy erotic photos/i #20
+/photos that will give you a lot of pleasant pleasures/i #20
+/www.google.com I have a small question for you/i #20
+/Look at the nude photos of your employees/i #20
+/horny and looking to play tonight|goldgirlxxx.xyz/i #20
+/Great information, I really loved reading this/i #7
+/The additional income for everyone/i #20
+/clan symbol clan sembol ko sembol clan simgeler/i #20
+
+/168friend.com|mernelanlo.tk|nyu9.weaverrandd.com|hot-girls-zone-here3.com|2000green.com/i #20
+
+/Financial Consultant of Proquest Consulting|client who has an interest in Investing in your country|proquestconsul1@gmail.com/i #20
+/Medical-Grade Toenail Clippers|troubles with winding nails|thepodiatrist.online/i #20
+
+/The ultimate smashing machine/i #20
+/50% OFF for the next 24 Hours ONLY/i #20
+/Learn how to advertise your site paying/i #20
+/No cost advertising for your website here|NO COST advertising|submit your site now and start getting new visitors/i #20
+/Social media is the fastest-growing trend in the history of the world/i #20
+/Your social media can do more/i #20
+/Social media marketing is a powerful way for businesses/i #20
+/getpeople.io/i #20
+/targeted visitors per day/i #20
+/citysbestaward.com/i #20
+/You won the 2021 City’s Best Award/i #20
+/Cryptocurrency rates are breaking records/i #20
+/I have a small question for you/i #5
+
+/Hey, I messaged you a week or two ago but hadn’t heard back/i #8
+
+
+/promotion for your website here|listofsitesthatacceptfreeads.tech|freeadsitedirectory.site/i #20
+/Weird Diet Trick Eliminates Vitiligo/i #20
+/no balance transfer cards/i #8
+/100top100.ru|3sz.hu|24lv.com/i #20
+/QGW[0-9A-Z]{15}/ #20
+
+/buy cialis generic/i #20
+/Hope you’re well, and that customers are profitable|and that customers are profitable/i #20
+/service your top competitors use/i #20
+/most effective marketing services/i #20
+/see if you are interested in redesigning or building a new website/i #20
+/pets-99.com|job-99.com|medicine-99.com|crime-99.com/i #20
+/personal Club and a personal Forum/i #20
+/Listing a home for sale can be a lot of work/i #10
+/people underestimate the time it can take to get your home adequately prepped/i #20
+/That said, it can be relatively quick and painless if you plan ahead/i #20
+/interested in an article on prepping your home/i #20
+/prepping your home for sale, with tips on cleaning, decluttering, and organizing/i #20
+/special considerations during COVID-19, and will promote your website/i #20
+/Chinese Real Estate Portals/i #20
+/in front of 150 million Chinese/i #20
+/translate manually and publish it on all the most popular/i #20
+/ProNova Partners/i #20
+/our closing timeframes are short, and the good times I'm afraid/i #20
+/trafficstampede.online|traffic-stampede.com|need-more-money.com/i #20
+/justseopanel.com|seo-services/i #20
+/Graphicdesignerisrael.com/i #20
+/DHbriefs.com/i #20
+/Windows-10-Pro-License-Key/i #20
+/reviews from real buyers/i #20
+/given to a man as a wife last year but not ready for marriage|he945101@gmail.com/i #20
+/medicopostura.online|CommissionBasedMarketing@gmail.com|business-it-services.com/i #20
+/You will get an SSL Certificate for Free/i #20
+/UV light handheld sanitizer/i #20
+/wp-genius.com/i #20
+/you need just to leave the application on our website/i #20
+/search engine optimization practice to get higher rankings on Google/i #20
+/shipped-order.com/i #20
+/SEO Pricing/i #20
+/easy bulk mailing/i #20
+/remarketingteams.com|hyperlabs.co/i #20
+/Every prospective customer that touches your brand/i #20
+/Your website can receive .* visitors/i #20
+/stolen reason Freundin beware europe/i #20
+/interested in a possible article exchange/i #20
+/reviewcarrier.com/i #20
+/PayPal wallet .* per day, because we have not yet|PayPal Money Adder/i #20
+/google.com\/url?q=/i #20
+/Abfallsäcke-blau/i #20
+/Jesus Christ, who is The Faithful Witness/i #20
+/FeedbackMessages/i #20
+/you can boost ranking in SERP/i #20
+/cryptocurrencies like Bitcoin/i #20
+/sheer volume of new information exploding daily/i #20
+/cointelegraph.com/i #20
+/chinahousebuyers.com|sqribble.club|linkSniff.com/i #20
+/Telegram group to follow our journey in getting/i #20
+/fraction of targeted traffic and useful actions/i #20
+/concerning regarding your current online marketing/i #20
+/increasing the assumed appeal and value it/i #20
+/steady stream of new clients/i #20
+/literally just steal everything I show/i #20
+
+/calendly.com/i #8
+
+/cutt.ly/i #10
+/I was wondering if your company does have any promotional/i #20
+/Moscow Kids Box/i #20
+/cover any cost involved with sending the promotional material|t-shirtworldrecord.com/i #20
+/1TB Adobe Cloud Storage|365 Days Money Back Guarantee Buy/i #20
+/Social share counts offer visitors a tangible count/i #20
+/We both know how hard it is for small businesses to get the financing/i #20
+/We offer an amazing 95% approval rate and|Applying does not affect your credit/i #20
+/0daymusic.org|istofsitesthatacceptfreeads.club|pawsafer.shop|marshag\.ru|u\.to|24crypto\.de|simplecrm.top|81rrsyl.violet/i #20
+/BEST SEO STRATEGY/i #20
+/Adobe Creative Cloud All Apps/i #20
+/Tropical Cuties|Home Made Model/i #20
+/leads and customers everyday/i #20
+/senior talent for every skill in the IT space/i #20
+/Does this method of advertising work/i #20
+/Did you know website contact page messages like this one/i #20
+/---__--___G/i #10
+/---__--___O/i #10
+/voyterpu.tk|oneflatratemarketing.com|flatratepromotion.link|freetrafficwebsites.click|88ywfl.kiskis|rudylangosh318@gmail.com|Ansleyeverlee375gcj1@gmail.com/i #20
+/Completely free CPM/i #20
+/reply back with “stop” or something similar/i #20
+/have thousands of new clients this year/i #20
+/Happy New Year 2021!!! Are you working next week/i #20
+
+/The last day of giant discounts on all our products/i #20
+/Earnings on a trading robot from/i #20
+/Everyone who needs money should try this Robot out/i #20
+/Chống năng helloệu quả nhờ/i #20
+/We wish you a million clients this year/i #20
+
+/Effortlessly Remove Stains And Mold/i #20
+/PROMO BUY 2 FREE 1 FOR NEXT 24 HOURS/i #20
+
+/do you offer website design/i #8
+
+/Good handles for dating sites|dating service reviews|first year anniversary gifts/i #20
+/quick how-to guide on prepping your home/i #20
+/make sure that your site is highlighted in the guide/i #20
+/Your Facebook page can do more|social media can bring remarkable success/i #20
+/marketing is less than the cost of not doing it/i #20
+
+/Social networks have become the catalyst that fuels search/i #20
+/Social media plays a vital role inside your brand's online success/i #20
+/copyright-protected images owned by myself at your web-site|copyright-protected images owned by myself at your website|document with the links to my images you used/i #20
+/post a sponsored article adjusted/i #20
+/free article for your website/i #20
+/Most profitable cryptocurrency miners has been released/i #20
+/black magic to successfully attracting customers/i #20
+/professional videos for businesses to put on their websites/i #20
+
+/unlimitedtrafficforyoursite.xyz/i #20
+/Please allow me to introduce to you this service that you/i #20
+/mapzone homework help/i #15
+/Great information, I really loved reading this./ #15
+/Hi Nice site https:..google.com/i #20
+
+/I hope life is treating you kind and business is AWESOME/i #20
+/Congratulations, you have won/i #20
+/4erteg\.ru/i #20
+/Congratulations/i #1
+/Congratulations, you have/i #5
+
+/rankguarantee.com|keywordtargetedwebtraffic.com|order-fulfillment.net|freeadpostingonthesesites.com|social-media-blast.com/i #20
+/Estimating projects "In House" can be time consuming and costly|Let Bidding Solutions LLC serve you/i #20
+/Instagram will make it easier for you to get people to your website via Stories/i #20
+/openarmsoutreachorganization.com|Open Arms Outreach Organization|We provide boreholes for clean drinking water and providing power generators|WIDOWS are actually at-risk in this part of world, you will help in providing skills/i #20
+/page 1 of Google/i #30
+/you can order on our online shop for making big money in a small business|services you may purchase on our online shop for making big money in a small business|still not considering getting new customers/i #20
+/magic of 10K Instagram followers/i #20
+/Good Afternoon people/i #2
+/Where can I subscribe/i #5
+/casino ethyl alcohol uae|blog vape stores opening/i #20
+/I'm going to try this/i #3
+/Hey Hope you’re well, and that business is/i #10
+/Happy New Year.*Are you working next week/i #8
+
+
+/Get The Worlds Greatest Magic Sand Free/i #20
+/Make Delicious African Soups Like a Pro/i #20
+/zeep\.ly/i #20
+/If you no longer wish to hear from us/i #20
+/Ghanaian Soups using tasty ingredients such as Tomatoes/i #20
+/Bunbury do dien tu tot Bunbury Consulting/i #20
+
+/drawing-portal\.com/i #20
+/no balance transfer cards/i #20
+/You have been credited with \d+ BTC/i #40
+/I have no idea why people pay for advertising|pay for advertising their site|free places to advertise|I'm not just talking about search engines either|There are literally thousands of sites that take ads for free and they get tons of organic traffic from everywhere|Here is a list of sites like these, get your ad posted for free on them now|www.effective-and-free-advertising.xyz/i #50
+/new customer calls per day/i #20
+/We have highly rated US.UK Writers/i #20
+/Original Content. Fast Turnaround. Lowest Pricing/i #20
+/If you do not wish further communication you can unsubscribe your site/i #20
+/introducing myself as your new territory manager for 411.directory/i #20
+/county exclusivity as we only work with one business in each county/i #20
+/join411directory.com/i #50
+/create videos for your social media profiles/i #20
+/All prices above are in USD and include a custom video/i #20
+
+/Your website or a website that your company hosts is infringing on a copyright protected images/i #50
+/copyright protected images owned by myself/i #50
+
+/Education backlinks are well known|well known to tremendously boost website traffic/i #20
+/Articles need to be unique and relevant/i #20
+/do-follow links/i #20
+/info@siit.co/i #20
+/Google Certified Marketing Expert Scholars/i #20
+/A video on Covid-19 which was a blog post|A product review for Japanese teapots|The Original Mosquito Trap/i #20
+/Unlimited Texting tool/i #20
+/You can text your WHOLE LIST at once using the bulk send feature/i #20
+/high-quality article on that chosen topic/i #20
+/Do you want to quit and just toss in the towel/i #20
+/if I could find something that worked, then I would get the income I wanted/i #20
+/\bjvz8\.com\b/i #20
+/\bsaaytext.com\b/i #20
+/getarticlesdone.net/i #20
+/send two-way texts and get replies/i #20
+/violating the copyright-protected images owned/i #20
+/under consequence of perjury, that the information in this/i #20
+/behalf of the owner of an exclusive and legal right that is allegedly/i #20
+/Bitcoins from Tesla/i #20
+/\bwww\.tut\.by\b/i #20
+
+/Hey Hope you’re well, and that business/i #20
+
+/I have a question. Is there a real human here who can get back to me/i #20
+/jking_s@olsita\.com/i #20
+/Remember, a single negative review can drive away/i #20
+/only financial platform in the world to have anti-crime certification/i #20
+/cryptocurrency trading/i #15
+/online shop for making big money in a small business/i #20
+/making big money in a small business/i #20
+/thousands of high traffic sites/i #20
+/tons of traffic every day/i #20
+/CRYPTO LUX/i #8
+/lehman63langston\.xtgem\.com|forms\.gle|thousands-of-ads.\link/i #20
+/Hope you’re well, and that business is/i #10
+/Are you getting very few site visitors/i #20
+/Unsuscribe Here/i #8
+/best SEO marketers/i #20
+/Premium sunglasses only|Providing Premium sunglasses/i #20
+/still not interested in getting new business/i #20
+
+/60% OFF today with free worldwide shipping|trendshades\.online/i #20
+/pantnessdetreds\.tk/i #20
+/ponlinecialisk\.com/i #20
+
