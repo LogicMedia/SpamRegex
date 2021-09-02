@@ -1,10 +1,10 @@
 
 #negative weight for McXxxxx names, local phone numbers
 
-/Mc[A-Z]|Mac[A-Z]/ #-2
-/\b\(?502\)? ?-?[0-9]{3}-?[0-9]{4}\b/i #-3
-/\b\(?812\)? ?-?[0-9]{3}-?[0-9]{4}\b/i #-2
-/\b\(?859\)? ?-?[0-9]{3}-?[0-9]{4}\b/i #-3
+/Mc[A-Z]|Mac[A-Z]/ #-3
+/\b\(?502\)? ?-?[0-9]{3}-?[0-9]{4}\b/i #-5
+/\b\(?812\)? ?-?[0-9]{3}-?[0-9]{4}\b/i #-4
+/\b\(?859\)? ?-?[0-9]{3}-?[0-9]{4}\b/i #-4
 
 
 
@@ -41,7 +41,7 @@
 /Щ|Ю|Ш|е|м|Р|В|А|о|і/i #10
 /เ|ปิ|ด|ยู|ส|เ|ซ|อ|ร์/i #20
 /蝦|皮|商|城|遊|戲|情|報/i #10
-/[ïîãîäàíîâîñòïîãîäàè]{3,}/i #100
+/[ïîãîäàíîâîñòïîãîäàè]{3,}/i #20
 /ß/i
 /Â³Ã/i
 /Âœ/i
@@ -594,13 +594,13 @@
 /teen pregnancy/i #100
 /Teen Mom/i #100
 /teen birth/i #100
-/Pornography/i #100
+/Pornography/i #20
 /asian porn/i #100
 /webcam/i #100
 /Gay Porn/i #100
 /specialty porn/i #100
 /Porn Star/i #100
-/porn/i #100
+/porn/i #20
 /pregnant japanese/i #100
 /pregnant tyoung/i #100
 /slave teen/i #100
@@ -2596,6 +2596,10 @@
 
 /Your website or a website that your company hosts is infringing on a copyright protected images/i #50
 /copyright protected images owned by myself/i #50
+/infringing on a copyright-protected images/i #50
+/you have deliberately infringed my legal rights under 17 USC Sec/i #50
+/good faith belief that utilization of the copyrighted materials referenced above as allegedly infringing is not permitted by the copyright owner/i #20
+
 
 /Education backlinks are well known|well known to tremendously boost website traffic/i #20
 /Articles need to be unique and relevant/i #20
@@ -2641,4 +2645,269 @@
 /60% OFF today with free worldwide shipping|trendshades\.online/i #20
 /pantnessdetreds\.tk/i #20
 /ponlinecialisk\.com/i #20
+
+
+/misconception of Buddhism being a religion/i #50
+/Buddhism, we believe your time will not be wasted|Albert Einstein thought about Buddhism/i #50
+/If you find this useful, please share with your friends/i #50
+
+/adelhamad@alsaeedcorp.com/i #20
+/is.gd\/CAmo59|is.gd\/CflR1n/i #20
+/rankrocks.com/i #20
+/We provide accurate material take-offs and cost estimates/i #20
+/We offer both Residential and Commercial Estimates/i #20
+/Kindly send us the plans or link to any FTP site so that/i #20
+/directbizfunding1/i #20
+/Installation of a Live Chat Widget/i #20
+/LIVE PERSON 24.7.365/i #20
+/because our pricing is performance-based, you only pay per lead/i #20
+/sutterlawgroup\.com/i #20
+/like me to write it up so that you can share it with your web team/i #20
+
+/Your site is in the top of the search results/i #20
+/Earn money from advertising/i #20
+/freetopfast\.com/i #20
+/IGHODALO HERBAL CENTER/i #20
+/organic plant extracts to use Herpes simplex virus/i #20
+/always looking for ways to increase our customers visibility/i #20
+/currently working on a rolling [0-9]+-day budget/i #20
+/burying negative reviews in the search engines/i #20
+/keywords are ranking on page 1 of search engines/i #20
+/analyzed your site in-depth and you can view your website audit report/i #20
+/website audit report/i #10
+/backlinks/i #5
+/high authority domains/i #20
+/robust social media marketing strategy/i #20
+/email newsletter campaign along with periodic blog posting/i #20
+/941-209-5828/i #20
+/Your reviews need to be good in order for them to buy/i #20
+/Do you have time in the next few days for a consultation on what we/i #20
+/Google Ads, Bing Ads, Facebook Ads, and more by using PPC/i #20
+
+/Just click on the link to INSTANTLY see how much you qualify/i #20
+/FbCourses\.net/i #20
+/Global Digital Marketing experts/i #20
+/AL SAEED CORPORATION/i #200
+/✅/i #10
+/256775067134/i #20
+
+
+/Your website or a website that your company hosts is violating the copyrighted images owned by/i #20
+/violating the copyrighted images owned/i #20
+/Reputation Management specialist/i #20
+/I specialize in reputation management/i #20
+/under penalty of perjury, that the information in this letter is accurate and that/i #20
+/having bad reviews can absolutely crush your business/i #20
+/goo\.su\/56h4/i #20
+/For a comfortable life, you need to take just a couple/i #20
+/yournewsecretweapon\.com/i #20
+/You don`t need to go to work daily anymore/i #20
+/or better not to think about it/i #10
+/kraftheftratingtec.tk|bridunan.cf/i #20
+
+/monkeydigital.org/i #20
+/silent-plug.com/i #20
+/The plug welcomes you/i #20
+/Your new secret weapon/i #20
+/Immense Faith Banner Company/i #20
+/These swimshorts ara AMAZING/i #20
+/New Telescope Provide You The Clearest Visual|Super Zoom Telescope/i #20
+/Flexible Adjustable Tablet Holder/i #20
+/Perfect Flashlight For Any Situation/i #20
+/these people only follow if they are interested/i #20
+/Let me just say your site is amazing/i #20
+/your site inspired me to build my own/i #20
+/hope everything is going great and much success in your future/i #20
+/The strategy of big profit/i #20
+/schluesseldienstfrankfurt.org/i #20
+
+/hclicks\.com/i #20
+/accstores\.com/i #20
+/info@baasim.com/i #20
+/nutricompany\.com/i #20
+/ROHTO PHARMACEUTICAL CO|rohtopharmaceutical.jp/i #20
+/It's a part-time job and will only take few minutes of your time daily/i #20
+/would like to offer you the highest rates for this type of ad/i #20
+/Could your site be generating more leads and sales/i #20
+/digital-x-press\.com/i #20
+/I lost your number but remembered your site|16106539916/i #20
+/getupautoinsurance\.com/i #20
+/3457246031620210851243753688578798louisvillesoccer/i #20
+/livesexcam\.mobi/i #20
+/SEO X Press Digital Agency/i #20
+
+/wealtheducationprogram\.com/i #20
+/They can increase your website conversion rate and attract new clients/i #20
+/All I ask in return for this 50% discount is a quick testimonial if you/i #20
+/topexplainers\.com/i #20
+/Cheers, Tom Shelton, Founder/i #20
+/The methods which worked before 2020 are now sadly Ancient History/i #20
+
+/Your Competitors are adapting to the/i #20
+/Elon Musk caused Bitcoin/i #20
+/Elon Musk/i #3
+/dogecoin|doge coin/i #4
+/crypto mining company/i #8
+/newly listed NASDAQ crypto mining company/i #20
+/Elon Musk or Tesla might have or is going to acquire/i #20
+/green company that mines bitcoin and ethereum using green energy/i #20
+/\bhvbtf\b|\bhive\.v\b/i #8
+/you can consider the strategy of buy the rumour and sell the news/i #20
+/doscar\.ru/i #20
+
+
+/can unsubscribe at/i #10
+/coldreach\.rocks/i #20
+/unsubscribe\.html/i #20
+/repwarn.rocks/i #20
+/lead generation software/i #20
+/fill their calendars with interested leads/i #20
+/search engine optimization can help|make your website more profitable/i #20
+/coinjoin/i #8
+/coinjoin\.kr|coinjoin\.co\.kr|nday\.kr|yanado\.kr/i #20
+/bring more traffic.sales to your site/i #20
+/Lotus Square Industry Zone 523800, Changan Town, Dongguan City, Guangdong,China/i #20
+/www.google.com I have a small question for you/i #20
+/Are you currently accepting ads on your website/i #20
+/vsnolvadexv\.com/i #20
+/Hello this site.*google.*the best/i #20
+
+/All this words about this service/i #10
+/Good choose, fast delivery time, average prices/i #20
+/haben wir folgende Ware zu verkaufen/i #20
+/Geschmacksneutral|geruchsneutral|lebensmittelecht/i #20
+/The original software is priced at 500 GBP but I can/i #20
+/CMS VIETNAM IMPORT EXPORT AND SERVICES TRADING PRODUCTION CO/i #20
+/Sholl xe88 download android Sholl GmbH/i #20
+/00923003303806, Habib Pura Amina Abad Road/i #20
+/CBT EMAIL EXTRACTOR/i #20
+/it-technicians\.com/i #20
+/Leave group of multiple accounts on android virtual machine/i #20
+/Kantenschutzwinkel/i #20
+/Send a message with a photo with the uid file/i #20
+/www\.mediafire\.com/i #20
+/Post directly simulate website link/i #20
+/foremedia\.net/i #20
+/Click the link here for 1 minute registration to our platform/i #20
+/I have at least 17 Premium Advertisers that have asked me to approach you/i #20
+/your-marketers\.com/i #20
+/good delivery rate, low inbox rate, perfect for clean/i #20
+/Different sending speeds, inbox rates for different prices/i #20
+/jasmine\.hfuller@gmail\.com/i #20
+/MailChimp, GetResponse, SendGrid, Mailjet/i #20
+/The first two world wars were part of the set-up for/i #20
+/rw4z-rSwNjY/i #20
+/0dayshouse.blogspot.com/i #20
+/so huge, that it almost defies belief/i #20
+/in this message isn't monitored, please DON'T reply/i #20
+/keep this short and sweet to make the 9 seconds/i #20
+/I am a customer of this service 1.5 years, like it/i #20
+/True Wireless Earbuds with amazing/i #20
+/Meet your best Buds/i #20
+/alternativesrock.blogspot.com/i #20
+/lock-master.com/i #20
+/Hi there! I know, you are super busy/i #20
+/Your website or a website that your company hosts is infringing on a copyrighted/i #20
+/to find the proof of my copyrights/i #20
+/Download it now and check this out for yourself/i #20
+/Our services are sold by small packages and will be useful/i #20
+/under penalty of perjury, that the information in this message is correct/i #20
+/DOWNLOAD MUSIC, PRIVATE FTP ACCESS/i #20
+/New Music Download/i #20
+/folk-2019.blogspot.com/i #20
+/acidjazzrecords.blogspot.com/i #20
+/popeurope.blogspot.com/i #20
+/electronic-2019.blogspot.com/i #20
+/scenelabels.blogspot.com/i #20
+/blogspot\.com/i #2
+
+/how to manage payroll for employees and contractors/i #20
+/In Slovakia, five thousand people signed up/i #20
+/many seniors who are looking to start a business/i #20
+/Looking forward to hearing back, Teresa PS/i #20
+/I'll share three interesting topics of your readers/i #20
+/I just want you to give me a backlink in return within the main/i #20
+/backlink/i #5
+/link back to your website/i #20
+/plagiarim-free/i #5
+/quality content/i #5
+/a link back to your website in the piece/i #20
+/www.google.com I have a small question for you/i #20
+/call me whatsapp/i #5
+/wa\.me\/79910404425/i #20
+/Body Posture Corrector|Improve Your Posture INSTANTLY|medicopostura\.com/i #20
+/back end work and even help with prospecting/i #20
+
+/to help you generate more business/i #20
+/handle a bulk supply of your products to Cameroon/i #20
+/find the perfect property, how to finance the expenses, how to manage payroll for employees/i #20
+/hrhbahmbi3@oepd.org/i #20
+/great way to keep a steady income and to keep your mind mentally sharp/i #20
+/European regulator nor the WHO has furthermore approved it/i #20
+/Sputnik V vaccination/i #20
+/Improve Your Posture INSTANTLY/i #20
+/I am reaching to make you a great offer/i #20
+/prospecting. Are you currently looking for any help/i #20
+/chimmed\.ru/i #20
+/Best, Aliza Zulfiqar/i #20
+
+/Terms are personalized for each business/i #20
+/There are limited funds available so please apply now if interested/i #20
+/901R,B1 BLK,2 QI,ZHONGDIAN,RUANJIANYUAN/ #20
+/How much for one for a month or 6 months thanks/i #20
+/Poker, Games Club - Dungeons and Dragons, Monopoly, Etc/i #20
+
+/Auriez des distributeurs en France/i #5
+/Good Afternoon people at/i #5
+/visualinfocraft\.com/i #20
+/sundatagroup\.one/i #20
+/inx\.lv\/7mky/i #20
+/LouisvilleKYAttorney\.com/i #20
+/Download GPlus software/i #20
+/casino game online real money/i #20
+/FPlusProxy4g/i #20
+/Fplusscheduler/i #20
+/In case you didn't realize/i #5
+/can be part of your development team/i #8
+/Roblox on Windows/i #11
+/flight with departure in 3 hours from confirmation/i #20
+/just letting you know you can now select/i #20
+/filerap\.com|fileshe\.com|filehug\.com|plus24h\.com|skyrevery\.com|bluestacks\.com|vivaldiaudio\.com|gee\.su\/NXAdg/i #20
+/Top Domain Sellers/i #20
+/Browse our databases or request a custom list that suits your needs/i #20
+/most efficient way to acquire new customers/i #20
+/GoDaddy.com appraises this domain/i #20
+/download the background image of any video/i #20
+/www.bignox.com|NoxPlayer/i #20
+/<img src="/i #100
+/<img src='/i #100
+/similar issues on my website which hurt my credibility/i #20
+/still not considering getting new clients/i #20
+/Your website or a website that your organization hosts|infringing on a copyrighted image/i #20
+
+
+/clicking on widget on the right sidebar of your listing/i #20
+/per list but I can do it only for/i#20
+/lender that provides financing for companies in your industry at a low-interest/i #20
+/My commision is paid directly by the lender/i #20
+/getting the weather, buying tickets, finding products, vetting services/i #20
+/Here are some strategies your local business can implement/i #20
+/highly trafficked search engine for free/i #20
+/Can you imagine what will happen when everyone finds out about your act/i #20
+/bc1qw220sye4cxya05ahpuw9lwfu7acwql660h73tq/i #20
+/to this bitcoin wallet/i #20
+/I am sure you are under the impression that China is a really screwed up/i #20
+/jt3M3QNrH4|NO5OH7KFEqw|qw-FLc7Z01Q|FQg5b6bagGs|hEusdJ7fi4Q/ #20
+/Question for YouTube Content Creators in China/i #20
+/celebrate the 2 year anniversary of Binance’s acquisition of Trust Wallet/i #20
+/Effective And Free Ways To Advertise/i #20
+/paying for clicks only seems to make|make the ad companies rich/i #20
+/Advertise Online Without Paying/i #20
+/keysdrie\.bhdsl/i #20
+
+/consume CNN and BBC's coverage of China/i #20
+
+/1mdr\.short\.gy|shorturl\.at\/zDZ23|t9y\.me\/crCX|goolnk\.com|softcorehdtube\.com|thehibrew.com/i #20
+/interested in an article from me/i #20
+/write about what small business owners can do|ensure they get more customer referrals|help keep their business growing/i #20
 
